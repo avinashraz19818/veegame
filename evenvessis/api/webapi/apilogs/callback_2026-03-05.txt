@@ -1,0 +1,64 @@
+[2026-03-05 23:03:36] 
+==================================================
+[2026-03-05 23:03:36] 🚀 CALLBACK RECEIVED
+[2026-03-05 23:03:36] Method: POST
+[2026-03-05 23:03:36] ✅ Database connected
+[2026-03-05 23:03:36] 📦 RAW: {"user_id":"113607","game_code":"a04d1f3eb8ccec8a4823bdf18e3f0e84","bet_amount":16,"win_amount":0,"serial_number":"2dd67377-27c9-3ce2-93f4-a6dc84b61742","game_round":"5248432126647480612","vendor_code":"TB_Chess","timestamp":"2026-03-05 17:33:36"}
+[2026-03-05 23:03:36] 👤 User: 113607
+[2026-03-05 23:03:36] 💰 Bet: 16
+[2026-03-05 23:03:36] 🏆 Win: 0
+[2026-03-05 23:03:36] 💰 Current balance: 105873.65
+[2026-03-05 23:03:36] 💰 New balance: 105873.65 - 16 + 0 = 105857.65
+[2026-03-05 23:03:36] ✅ Balance updated
+[2026-03-05 23:03:36] ⚠️ Log failed: Table 'pkrgame.game_bet_logs' doesn't exist
+[2026-03-05 23:03:36] 💰 Rebate added: 0.08
+[2026-03-05 23:03:36] ✅ Success - New balance: 105857.65
+[2026-03-05 23:03:36] 📤 RESPONSE: {"code":0,"msg":"Success","balance_inr":105857.65}
+[2026-03-05 23:03:38] 
+==================================================
+[2026-03-05 23:03:38] 🚀 CALLBACK RECEIVED
+[2026-03-05 23:03:38] Method: POST
+[2026-03-05 23:03:38] ✅ Database connected
+[2026-03-05 23:03:38] 📦 RAW: {"user_id":"113607","game_code":"a04d1f3eb8ccec8a4823bdf18e3f0e84","bet_amount":-16,"win_amount":0,"serial_number":"4b5ec7d8-faaf-3786-9d02-72cea060d669","game_round":"5248432126647480612","vendor_code":"TB_Chess","timestamp":"2026-03-05 17:33:37"}
+[2026-03-05 23:03:38] 👤 User: 113607
+[2026-03-05 23:03:38] 💰 Bet: -16
+[2026-03-05 23:03:38] 🏆 Win: 0
+[2026-03-05 23:03:38] 💰 Fixed negative bet to: 16
+[2026-03-05 23:03:38] 💰 Current balance: 105857.65
+[2026-03-05 23:03:38] 💰 New balance: 105857.65 - 16 + 0 = 105841.65
+[2026-03-05 23:03:38] ✅ Balance updated
+[2026-03-05 23:03:38] ⚠️ Log failed: Table 'pkrgame.game_bet_logs' doesn't exist
+[2026-03-05 23:03:38] 💰 Rebate added: 0.08
+[2026-03-05 23:03:38] ✅ Success - New balance: 105841.65
+[2026-03-05 23:03:38] 📤 RESPONSE: {"code":0,"msg":"Success","balance_inr":105841.65}
+[2026-03-05 23:07:23] 
+==================================================
+[2026-03-05 23:07:23] 🚀 CALLBACK RECEIVED
+[2026-03-05 23:07:23] Method: POST
+[2026-03-05 23:07:23] ✅ Database connected
+[2026-03-05 23:07:23] 📦 RAW: {"user_id":"1174993","game_code":"6e9d55c8ef63776d56c85a51a934451f","bet_amount":300,"win_amount":0,"serial_number":"d069d602-b5c2-3caa-8a94-874f50b0b4e0","game_round":"12334389542503266881","vendor_code":"evolutionlive","timestamp":"2026-03-05 17:37:23"}
+[2026-03-05 23:07:23] 👤 User: 1174993
+[2026-03-05 23:07:23] 💰 Bet: 300
+[2026-03-05 23:07:23] 🏆 Win: 0
+[2026-03-05 23:07:23] 💰 Current balance: 100300
+[2026-03-05 23:07:23] 💰 New balance: 100300 - 300 + 0 = 100000
+[2026-03-05 23:07:23] ✅ Balance updated
+[2026-03-05 23:07:23] ⚠️ Log failed: Table 'pkrgame.game_bet_logs' doesn't exist
+[2026-03-05 23:07:23] 💰 Rebate added: 1.5
+[2026-03-05 23:07:23] ✅ Success - New balance: 100000
+[2026-03-05 23:07:23] 📤 RESPONSE: {"code":0,"msg":"Success","balance_inr":100000}
+[2026-03-05 23:07:28] 
+==================================================
+[2026-03-05 23:07:28] 🚀 CALLBACK RECEIVED
+[2026-03-05 23:07:28] Method: POST
+[2026-03-05 23:07:28] ✅ Database connected
+[2026-03-05 23:07:28] 📦 RAW: {"user_id":"1174993","game_code":"6e9d55c8ef63776d56c85a51a934451f","bet_amount":0,"win_amount":400,"serial_number":"9cb91f44-fd01-366f-8f8a-1ec2603a9e7e","game_round":"12334389542503266881","vendor_code":"evolutionlive","timestamp":"2026-03-05 17:37:28"}
+[2026-03-05 23:07:28] 👤 User: 1174993
+[2026-03-05 23:07:28] 💰 Bet: 0
+[2026-03-05 23:07:28] 🏆 Win: 400
+[2026-03-05 23:07:28] 💰 Current balance: 100000
+[2026-03-05 23:07:28] 💰 New balance: 100000 - 0 + 400 = 100400
+[2026-03-05 23:07:28] ✅ Balance updated
+[2026-03-05 23:07:28] ⚠️ Log failed: Table 'pkrgame.game_bet_logs' doesn't exist
+[2026-03-05 23:07:28] ✅ Success - New balance: 100400
+[2026-03-05 23:07:28] 📤 RESPONSE: {"code":0,"msg":"Success","balance_inr":100400}

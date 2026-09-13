@@ -1,0 +1,10 @@
+[07-Sep-2025 22:57:02 Asia/Kolkata] PHP Warning:  include(/apibaseurl.php): Failed to open stream: No such file or directory in /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php on line 6
+[07-Sep-2025 22:57:02 Asia/Kolkata] PHP Warning:  include(): Failed opening '/apibaseurl.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php on line 6
+[07-Sep-2025 22:57:02 Asia/Kolkata] PHP Warning:  Undefined variable $apibaseurl in /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php on line 31
+[07-Sep-2025 22:57:02 Asia/Kolkata] PHP Warning:  Undefined variable $apibaseurl in /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php on line 31
+[07-Sep-2025 22:57:02 Asia/Kolkata] PHP Warning:  Undefined variable $jdbpro in /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php on line 119
+[07-Sep-2025 22:57:02 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: prepareWithdrawHandle(): Argument #2 ($callbackUrl) must be of type string, null given, called in /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php on line 119 and defined in /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php:27
+Stack trace:
+#0 /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php(119): prepareWithdrawHandle()
+#1 {main}
+  thrown in /home/tlwwyizlvd/luckywin28.buzz/apifolder/api/webapi/apifiles/balance.php on line 27

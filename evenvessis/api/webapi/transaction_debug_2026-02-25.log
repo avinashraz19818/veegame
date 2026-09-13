@@ -1,0 +1,303 @@
+2026-02-25 02:49:30 - API called
+2026-02-25 02:49:30 - POST data: {"pageNo":1,"pageSize":10,"date":"","type":-1,"language":0,"random":"8b973d15961145bfbb620d8f1e4b9024","signature":"8A8877AC07DD3973CD90C60AE1689BC7","timestamp":1771967970}
+2026-02-25 02:49:30 - Params: date=, type=-1, pageNo=1, pageSize=10
+2026-02-25 02:49:30 - User ID: 113607
+2026-02-25 02:49:30 - Main Query: SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate WHERE byabaharkarta = 113607 
+                                      UNION ALL
+                                      SELECT kramasankhye as parichaya, bonus as ketebida, 'sb' as phalaphala, bonus as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM shonu_kaichila WHERE balakedara = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx3 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx5 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx10 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT macau as parichaya, salary as ketebida, 'ds' as phalaphala, salary as sesabida, createdate as tiarikala 
+                                      FROM dailysalary WHERE userid = 113607
+                                      UNION ALL
+                                      SELECT shonu as parichaya, motta as ketebida, 'rc' as phalaphala, motta as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM thevani WHERE balakedara = 113607 AND sthiti = 1
+                                      UNION ALL
+                                      SELECT id as parichaya, sturgis as ketebida, 'frc' as phalaphala, sturgis as sesabida, time as tiarikala 
+                                      FROM egrahcer_sonub WHERE dr = 113607 AND status = 1
+                                      UNION ALL
+                                      SELECT id as parichaya, prize as ketebida, 'rb' as phalaphala, prize as sesabida, time as tiarikala 
+                                      FROM spinrec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT dearlord as parichaya, todayblessings as ketebida, 'atb' as phalaphala, todayblessings as sesabida, amen as tiarikala 
+                                      FROM cihne WHERE identity = 113607
+                                      UNION ALL
+                                      SELECT shonu as parichaya, motta as ketebida, 'wd' as phalaphala, remarks as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM hintegedukolli WHERE balakedara = 113607 
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'orb' as phalaphala, motta as sesabida, created_at as tiarikala 
+                                      FROM rebetrec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'lvlup' as phalaphala, type as sesabida, created_at as tiarikala 
+                                      FROM viprec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, rebateAmount_Last as ketebida, 'cmd' as phalaphala, rebateAmount_Last as sesabida, created_timestamp as tiarikala 
+                                      FROM commission WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'reftask' as phalaphala, motta as sesabida, time as tiarikala 
+                                      FROM noitativni_sonub WHERE arthur = 113607 AND status = 1 
+                                      UNION ALL
+                                      SELECT kani as parichaya, price as ketebida, 're' as phalaphala, remark as sesabida, shonu as tiarikala 
+                                      FROM hodike_balakedara WHERE userkani = 113607 
+                                      UNION ALL
+                                      SELECT id as parichaya, amount as ketebida, 'bonus' as phalaphala, CONCAT(bonus_type, '|', remark) as sesabida, transaction_date as tiarikala 
+                                      FROM all_bonus_transactions WHERE user_id = 113607
+                                      UNION ALL
+                                      -- Agent Commission (Salary)
+                                      SELECT id as parichaya, total_amount as ketebida, 'agent_salary' as phalaphala, 
+                                             CONCAT('Agent Salary|', salary_type) as sesabida, created_at as tiarikala 
+                                      FROM agent_salary_log WHERE userid = 113607
+                                      ORDER BY tiarikala DESC LIMIT 10 OFFSET 0
+2026-02-25 02:49:30 - Query Error: Table 'pkrgame.agent_salary_log' doesn't exist
+2026-02-25 02:49:34 - API called
+2026-02-25 02:49:34 - POST data: {"pageNo":1,"pageSize":10,"date":"","type":-1,"language":0,"random":"76dbdace35ec4c4aaef995bb3ae95213","signature":"F49872598907A9BD382157C1AA8FC3B9","timestamp":1771967974}
+2026-02-25 02:49:34 - Params: date=, type=-1, pageNo=1, pageSize=10
+2026-02-25 02:49:34 - User ID: 113607
+2026-02-25 02:49:34 - Main Query: SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate WHERE byabaharkarta = 113607 
+                                      UNION ALL
+                                      SELECT kramasankhye as parichaya, bonus as ketebida, 'sb' as phalaphala, bonus as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM shonu_kaichila WHERE balakedara = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx3 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx5 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx10 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT macau as parichaya, salary as ketebida, 'ds' as phalaphala, salary as sesabida, createdate as tiarikala 
+                                      FROM dailysalary WHERE userid = 113607
+                                      UNION ALL
+                                      SELECT shonu as parichaya, motta as ketebida, 'rc' as phalaphala, motta as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM thevani WHERE balakedara = 113607 AND sthiti = 1
+                                      UNION ALL
+                                      SELECT id as parichaya, sturgis as ketebida, 'frc' as phalaphala, sturgis as sesabida, time as tiarikala 
+                                      FROM egrahcer_sonub WHERE dr = 113607 AND status = 1
+                                      UNION ALL
+                                      SELECT id as parichaya, prize as ketebida, 'rb' as phalaphala, prize as sesabida, time as tiarikala 
+                                      FROM spinrec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT dearlord as parichaya, todayblessings as ketebida, 'atb' as phalaphala, todayblessings as sesabida, amen as tiarikala 
+                                      FROM cihne WHERE identity = 113607
+                                      UNION ALL
+                                      SELECT shonu as parichaya, motta as ketebida, 'wd' as phalaphala, remarks as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM hintegedukolli WHERE balakedara = 113607 
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'orb' as phalaphala, motta as sesabida, created_at as tiarikala 
+                                      FROM rebetrec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'lvlup' as phalaphala, type as sesabida, created_at as tiarikala 
+                                      FROM viprec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, rebateAmount_Last as ketebida, 'cmd' as phalaphala, rebateAmount_Last as sesabida, created_timestamp as tiarikala 
+                                      FROM commission WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'reftask' as phalaphala, motta as sesabida, time as tiarikala 
+                                      FROM noitativni_sonub WHERE arthur = 113607 AND status = 1 
+                                      UNION ALL
+                                      SELECT kani as parichaya, price as ketebida, 're' as phalaphala, remark as sesabida, shonu as tiarikala 
+                                      FROM hodike_balakedara WHERE userkani = 113607 
+                                      UNION ALL
+                                      SELECT id as parichaya, amount as ketebida, 'bonus' as phalaphala, CONCAT(bonus_type, '|', remark) as sesabida, transaction_date as tiarikala 
+                                      FROM all_bonus_transactions WHERE user_id = 113607
+                                      UNION ALL
+                                      -- Agent Commission (Salary)
+                                      SELECT id as parichaya, total_amount as ketebida, 'agent_salary' as phalaphala, 
+                                             CONCAT('Agent Salary|', salary_type) as sesabida, created_at as tiarikala 
+                                      FROM agent_salary_log WHERE userid = 113607
+                                      ORDER BY tiarikala DESC LIMIT 10 OFFSET 0
+2026-02-25 02:49:34 - Query Error: Table 'pkrgame.agent_salary_log' doesn't exist
+2026-02-25 02:49:39 - API called
+2026-02-25 02:49:39 - POST data: {"pageNo":1,"pageSize":10,"date":"2026-02-25 00:00:00","type":-1,"language":0,"random":"9e00fd15aebf44b689e96bb75d4bc919","signature":"453ACA4A190BA42537AB5FDAD0BD25D3","timestamp":1771967979}
+2026-02-25 02:49:39 - Params: date=2026-02-25 00:00:00, type=-1, pageNo=1, pageSize=10
+2026-02-25 02:49:39 - User ID: 113607
+2026-02-25 02:49:41 - API called
+2026-02-25 02:49:41 - POST data: {"pageNo":1,"pageSize":10,"date":"2026-02-25 00:00:00","type":0,"language":0,"random":"905a0d84db6b46a0a1808edaa884f62d","signature":"64472249C7142C995CBA165161954F7D","timestamp":1771967981}
+2026-02-25 02:49:41 - Params: date=2026-02-25 00:00:00, type=0, pageNo=1, pageSize=10
+2026-02-25 02:49:41 - User ID: 113607
+2026-02-25 03:06:29 - API Called
+2026-02-25 03:06:29 - POST Data: {"pageNo":1,"pageSize":10,"date":"","type":-1,"language":0,"random":"6f45a237cff44b23b8b40dcf9fe95c50","signature":"E61CAFBDD32815F809B837A86B5CE496","timestamp":1771968989}
+2026-02-25 03:06:29 - Params: date=, type=-1, pageNo=1, pageSize=10
+2026-02-25 03:06:29 - Signature Check: expected=E61CAFBDD32815F809B837A86B5CE496, got=E61CAFBDD32815F809B837A86B5CE496
+2026-02-25 03:06:29 - JWT Auth: {"status":"Success","payload":{"id":"113607","mobile":"923157467992","status":"1","expire":1772054367,"ishonup":"144.16.21.250","codechorkamukala":"Alone"}}
+2026-02-25 03:06:29 - User ID: 113607
+2026-02-25 03:06:29 - ALL Query: SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate WHERE byabaharkarta = 113607 
+                                      UNION ALL
+                                      SELECT kramasankhye as parichaya, bonus as ketebida, 'sb' as phalaphala, bonus as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM shonu_kaichila WHERE balakedara = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx3 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx5 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_trx10 WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_aidudi_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_drei WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_funf WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT parichaya, ketebida, phalaphala, sesabida, tiarikala
+                                      FROM bajikattuttate_kemuru_zehn WHERE byabaharkarta = 113607
+                                      UNION ALL
+                                      SELECT macau as parichaya, salary as ketebida, 'ds' as phalaphala, salary as sesabida, createdate as tiarikala 
+                                      FROM dailysalary WHERE userid = 113607
+                                      UNION ALL
+                                      SELECT shonu as parichaya, motta as ketebida, 'rc' as phalaphala, motta as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM thevani WHERE balakedara = 113607 AND sthiti = 1
+                                      UNION ALL
+                                      SELECT id as parichaya, sturgis as ketebida, 'frc' as phalaphala, sturgis as sesabida, time as tiarikala 
+                                      FROM egrahcer_sonub WHERE dr = 113607 AND status = 1
+                                      UNION ALL
+                                      SELECT id as parichaya, prize as ketebida, 'rb' as phalaphala, prize as sesabida, time as tiarikala 
+                                      FROM spinrec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT dearlord as parichaya, todayblessings as ketebida, 'atb' as phalaphala, todayblessings as sesabida, amen as tiarikala 
+                                      FROM cihne WHERE identity = 113607
+                                      UNION ALL
+                                      SELECT shonu as parichaya, motta as ketebida, 'wd' as phalaphala, remarks as sesabida, dinankavannuracisi as tiarikala 
+                                      FROM hintegedukolli WHERE balakedara = 113607 
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'orb' as phalaphala, motta as sesabida, created_at as tiarikala 
+                                      FROM rebetrec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'lvlup' as phalaphala, type as sesabida, created_at as tiarikala 
+                                      FROM viprec WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, rebateAmount_Last as ketebida, 'cmd' as phalaphala, rebateAmount_Last as sesabida, created_timestamp as tiarikala 
+                                      FROM commission WHERE user_id = 113607
+                                      UNION ALL
+                                      SELECT id as parichaya, motta as ketebida, 'reftask' as phalaphala, motta as sesabida, time as tiarikala 
+                                      FROM noitativni_sonub WHERE arthur = 113607 AND status = 1 
+                                      UNION ALL
+                                      SELECT kani as parichaya, price as ketebida, 're' as phalaphala, remark as sesabida, shonu as tiarikala 
+                                      FROM hodike_balakedara WHERE userkani = 113607 
+                                      UNION ALL
+                                      SELECT id as parichaya, amount as ketebida, 'bonus' as phalaphala, CONCAT(bonus_type, '|', remark) as sesabida, transaction_date as tiarikala 
+                                      FROM all_bonus_transactions WHERE user_id = 113607
+                                      UNION ALL
+                                      -- AGENT COMMISSION
+                                      SELECT id as parichaya, total_amount as ketebida, 'agent_salary' as phalaphala, 
+                                             CONCAT('Agent Salary|', salary_type) as sesabida, created_at as tiarikala 
+                                      FROM agent_salary_log WHERE userid = 113607
+                                      ORDER BY tiarikala DESC LIMIT 10 OFFSET 0
+2026-02-25 03:06:29 - ALL Query Error: Table 'pkrgame.agent_salary_log' doesn't exist
+2026-02-25 03:06:29 - Count Query Error: Table 'pkrgame.agent_salary_log' doesn't exist
+2026-02-25 03:06:29 - No transactions found

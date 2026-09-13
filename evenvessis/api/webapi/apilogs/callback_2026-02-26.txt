@@ -1,0 +1,34 @@
+[2026-02-26 23:53:10] 
+==================================================
+[2026-02-26 23:53:10] 🚀 CALLBACK RECEIVED
+[2026-02-26 23:53:10] Method: POST
+[2026-02-26 23:53:10] ⚠️ functions2.php not found, creating minimal version
+[2026-02-26 23:53:10] ✅ Database connected
+[2026-02-26 23:53:10] 📦 RAW: {"user_id":"113607","game_code":"a04d1f3eb8ccec8a4823bdf18e3f0e84","bet_amount":16,"win_amount":0,"serial_number":"d620f4a2-c766-389d-b198-bd76b1bcbde9","game_round":"10155840527461595527","vendor_code":"TB_Chess","timestamp":"2026-02-26 18:23:08"}
+[2026-02-26 23:53:10] 👤 User: 113607
+[2026-02-26 23:53:10] 💰 Bet: 16
+[2026-02-26 23:53:10] 🏆 Win: 0
+[2026-02-26 23:53:10] 💰 Current balance: 2818.25
+[2026-02-26 23:53:10] 💰 New balance: 2818.25 - 16 + 0 = 2802.25
+[2026-02-26 23:53:10] ✅ Balance updated
+[2026-02-26 23:53:10] ⚠️ Log failed: Table 'pkrgame.game_bet_logs' doesn't exist
+[2026-02-26 23:53:10] 💰 Rebate added: 0.08
+[2026-02-26 23:53:10] ✅ Success - New balance: 2802.25
+[2026-02-26 23:53:10] 📤 RESPONSE: {"code":0,"msg":"Success","balance_inr":2802.25}
+[2026-02-26 23:53:12] 
+==================================================
+[2026-02-26 23:53:12] 🚀 CALLBACK RECEIVED
+[2026-02-26 23:53:12] Method: POST
+[2026-02-26 23:53:12] ✅ Database connected
+[2026-02-26 23:53:12] 📦 RAW: {"user_id":"113607","game_code":"a04d1f3eb8ccec8a4823bdf18e3f0e84","bet_amount":-16,"win_amount":0,"serial_number":"9e474136-a0f2-3af4-b6a3-7218e74d51c6","game_round":"10155840527461595527","vendor_code":"TB_Chess","timestamp":"2026-02-26 18:23:11"}
+[2026-02-26 23:53:12] 👤 User: 113607
+[2026-02-26 23:53:12] 💰 Bet: -16
+[2026-02-26 23:53:12] 🏆 Win: 0
+[2026-02-26 23:53:12] 💰 Fixed negative bet to: 16
+[2026-02-26 23:53:12] 💰 Current balance: 2802.25
+[2026-02-26 23:53:12] 💰 New balance: 2802.25 - 16 + 0 = 2786.25
+[2026-02-26 23:53:12] ✅ Balance updated
+[2026-02-26 23:53:12] ⚠️ Log failed: Table 'pkrgame.game_bet_logs' doesn't exist
+[2026-02-26 23:53:12] 💰 Rebate added: 0.08
+[2026-02-26 23:53:12] ✅ Success - New balance: 2786.25
+[2026-02-26 23:53:12] 📤 RESPONSE: {"code":0,"msg":"Success","balance_inr":2786.25}

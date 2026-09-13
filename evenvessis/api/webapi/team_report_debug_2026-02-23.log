@@ -1,0 +1,1484 @@
+2026-02-23 17:40:20 - ========== API CALL STARTED ==========
+2026-02-23 17:40:20 - POST data: {"pageNo":1,"pageSize":10,"lv":-1,"day":"2026-02-22 00:00:00","userId":null,"language":0,"random":"4f3c418ee639466baf852ea1bc527f49","signature":"5CC2C76350FBE1397B31608B75683C19","timestamp":1771848618}
+2026-02-23 17:40:20 - Request params: day=2026-02-22 00:00:00, lv=-1, pageNo=1, pageSize=10
+2026-02-23 17:40:20 - Signature check: expected=5CC2C76350FBE1397B31608B75683C19, got=5CC2C76350FBE1397B31608B75683C19
+2026-02-23 17:40:20 - JWT validation: {"status":"Success","payload":{"id":"113607","mobile":"923157467992","status":"1","expire":1771927890,"ishonup":"223.123.15.242","codechorkamukala":"Alone"}}
+2026-02-23 17:40:20 - User query: SELECT akshinak, owncode, id
+                  FROM shonu_subjects
+                  WHERE akshinak = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExMzYwNyIsIm1vYmlsZSI6IjkyMzE1NzQ2Nzk5MiIsInN0YXR1cyI6IjEiLCJleHBpcmUiOjE3NzE5Mjc4OTAsImlzaG9udXAiOiIyMjMuMTIzLjE1LjI0MiIsImNvZGVjaG9ya2FtdWthbGEiOiJBbG9uZSJ9.3JFYpvM1ZD3WsH3nEXYzabOu_Zgv4oAGJaRGS4avdPc', found: 1
+2026-02-23 17:40:20 - Logged in user: id=113607, owncode=400660113602
+2026-02-23 17:40:20 - Loading ALL TEAM MEMBERS report for level: -1
+2026-02-23 17:40:20 - === PROCESSING LEVEL -1 (ALL LEVELS) ===
+2026-02-23 17:40:20 - Vyavahara records for user 113607 on 2026-02-22 00:00:00: 0
+2026-02-23 17:40:20 - Commission query: SELECT COALESCE(SUM(ayoga), 0) as sumayoga,
+                                         COUNT(DISTINCT koduvavanu) as bcs,
+                                         COALESCE(SUM(ketebida), 0) as bas
+                                       FROM vyavahara
+                                       WHERE balakedara = '113607' 
+                                       AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Commission results: sumayoga=0, bcs=0, bas=0
+2026-02-23 17:40:20 - Thevani records on 2026-02-22 00:00:00: 65
+2026-02-23 17:40:20 - Recharge count query: SELECT COUNT(DISTINCT balakedara) as recharge_count
+                                                 FROM thevani
+                                                 WHERE sthiti = '1' 
+                                                 AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                 AND balakedara IN (
+                                                     SELECT id FROM shonu_subjects 
+                                                     WHERE code = '400660113602' 
+                                                     OR code1 = '400660113602' 
+                                                     OR code2 = '400660113602' 
+                                                     OR code3 = '400660113602' 
+                                                     OR code4 = '400660113602' 
+                                                     OR code5 = '400660113602'
+                                                 )
+2026-02-23 17:40:20 - Recharge amount query: SELECT COALESCE(SUM(motta), 0) as sumotta
+                                                  FROM thevani
+                                                  WHERE sthiti = '1' 
+                                                  AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                  AND balakedara IN (
+                                                      SELECT id FROM shonu_subjects 
+                                                      WHERE code = '400660113602' 
+                                                      OR code1 = '400660113602' 
+                                                      OR code2 = '400660113602' 
+                                                      OR code3 = '400660113602' 
+                                                      OR code4 = '400660113602' 
+                                                      OR code5 = '400660113602'
+                                                  )
+2026-02-23 17:40:20 - Recharge results: count=17, amount=489820
+2026-02-23 17:40:20 - First recharge query: SELECT COUNT(DISTINCT t1.balakedara) as first_count
+                                                 FROM thevani t1
+                                                 WHERE t1.sthiti = '1' 
+                                                 AND DATE(t1.dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                 AND t1.balakedara IN (
+                                                     SELECT id FROM shonu_subjects 
+                                                     WHERE code = '400660113602' 
+                                                     OR code1 = '400660113602' 
+                                                     OR code2 = '400660113602' 
+                                                     OR code3 = '400660113602' 
+                                                     OR code4 = '400660113602' 
+                                                     OR code5 = '400660113602'
+                                                 )
+                                                 AND NOT EXISTS (
+                                                     SELECT 1 FROM thevani t2 
+                                                     WHERE t2.balakedara = t1.balakedara 
+                                                     AND t2.sthiti = '1' 
+                                                     AND t2.dinankavannuracisi < DATE('2026-02-22 00:00:00')
+                                                 )
+2026-02-23 17:40:20 - First recharge amount query: SELECT COALESCE(SUM(t1.motta), 0) as sumotta
+                                                       FROM thevani t1
+                                                       WHERE t1.sthiti = '1' 
+                                                       AND DATE(t1.dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                       AND t1.balakedara IN (
+                                                           SELECT id FROM shonu_subjects 
+                                                           WHERE code = '400660113602' 
+                                                           OR code1 = '400660113602' 
+                                                           OR code2 = '400660113602' 
+                                                           OR code3 = '400660113602' 
+                                                           OR code4 = '400660113602' 
+                                                           OR code5 = '400660113602'
+                                                       )
+                                                       AND NOT EXISTS (
+                                                           SELECT 1 FROM thevani t2 
+                                                           WHERE t2.balakedara = t1.balakedara 
+                                                           AND t2.sthiti = '1' 
+                                                           AND t2.dinankavannuracisi < DATE('2026-02-22 00:00:00')
+                                                       )
+2026-02-23 17:40:20 - First recharge results: count=13, amount=47300
+2026-02-23 17:40:20 - Members query: SELECT id, codechorkamukala, status, createdate,
+                                            CASE
+                                                WHEN code = '400660113602' THEN 1
+                                                WHEN code1 = '400660113602' THEN 2
+                                                WHEN code2 = '400660113602' THEN 3
+                                                WHEN code3 = '400660113602' THEN 4
+                                                WHEN code4 = '400660113602' THEN 5
+                                                WHEN code5 = '400660113602' THEN 6
+                                                ELSE 0
+                                            END as member_level
+                                            FROM shonu_subjects
+                                            WHERE code = '400660113602'
+                                               OR code1 = '400660113602'
+                                               OR code2 = '400660113602'
+                                               OR code3 = '400660113602'
+                                               OR code4 = '400660113602'
+                                               OR code5 = '400660113602'
+                                            ORDER BY id DESC
+                                            LIMIT 0, 10
+2026-02-23 17:40:20 - Total team members: 366
+2026-02-23 17:40:20 - Processing member ID: 114014, Level: 5
+2026-02-23 17:40:20 - Bet query for member 114014: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114014: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114014' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114014: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114014' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114014 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114012, Level: 5
+2026-02-23 17:40:20 - Bet query for member 114012: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114012: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114012' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114012: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114012' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114012 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114011, Level: 5
+2026-02-23 17:40:20 - Bet query for member 114011: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114011: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114011' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114011: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114011' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114011 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114010, Level: 6
+2026-02-23 17:40:20 - Bet query for member 114010: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114010: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114010' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114010: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114010' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114010 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114009, Level: 6
+2026-02-23 17:40:20 - Bet query for member 114009: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114009: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114009' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114009: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114009' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114009 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114007, Level: 6
+2026-02-23 17:40:20 - Bet query for member 114007: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114007: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114007' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114007: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114007' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114007 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114006, Level: 6
+2026-02-23 17:40:20 - Bet query for member 114006: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114006: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114006' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114006: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114006' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114006 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114005, Level: 6
+2026-02-23 17:40:20 - Bet query for member 114005: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114005: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114005' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114005: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114005' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114005 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114004, Level: 6
+2026-02-23 17:40:20 - Bet query for member 114004: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114004: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114004' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114004: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114004' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114004 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Processing member ID: 114003, Level: 6
+2026-02-23 17:40:20 - Bet query for member 114003: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:20 - Recharge query for member 114003: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114003' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:20 - Commission query for member 114003: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114003' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:20 - Member 114003 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:20 - Final data prepared with 10 members
+2026-02-23 17:40:20 - Response: {"code":0,"msg":"Succeed","msgCode":0,"serviceNowTime":"2026-02-23 17:40:20","data":{"data":{"rebateAmountSum":0,"betCountSum":0,"betAmountSum":0,"recahrgeCount":17,"recahrgeAmountSum":489820,"firstRecahrgeCount":13,"firstRecahrgeAmountSum":47300},"list":[{"userID":114014,"lv":5,"nickName":"Member2HFRNVY0","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114012,"lv":5,"nickName":"Member54ZPSLFJ","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114011,"lv":5,"nickName":"MemberM0QGUY8N","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114010,"lv":6,"nickName":"Member5XWAHQL8","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114009,"lv":6,"nickName":"MemberT4GZ9FCQ","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114007,"lv":6,"nickName":"MemberH5D3EFIC","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114006,"lv":6,"nickName":"MemberZBTGAH25","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114005,"lv":6,"nickName":"MemberDRAH7TX9","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114004,"lv":6,"nickName":"MemberF5ZUX4ES","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114003,"lv":6,"nickName":"MemberT8UDZ2MR","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0}],"pageNo":1,"totalCount":"366","totalPage":37}}
+2026-02-23 17:40:20 - ========== API CALL ENDED ==========
+
+
+2026-02-23 17:40:24 - ========== API CALL STARTED ==========
+2026-02-23 17:40:24 - POST data: {"pageNo":1,"pageSize":10,"lv":-1,"day":"2026-02-21 00:00:00","userId":null,"language":0,"random":"166c6a439f334e66af642265169171c3","signature":"82D5D2A09043CD49A502CBFAE2589378","timestamp":1771848621}
+2026-02-23 17:40:24 - Request params: day=2026-02-21 00:00:00, lv=-1, pageNo=1, pageSize=10
+2026-02-23 17:40:24 - Signature check: expected=82D5D2A09043CD49A502CBFAE2589378, got=82D5D2A09043CD49A502CBFAE2589378
+2026-02-23 17:40:24 - JWT validation: {"status":"Success","payload":{"id":"113607","mobile":"923157467992","status":"1","expire":1771927890,"ishonup":"223.123.15.242","codechorkamukala":"Alone"}}
+2026-02-23 17:40:24 - User query: SELECT akshinak, owncode, id
+                  FROM shonu_subjects
+                  WHERE akshinak = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExMzYwNyIsIm1vYmlsZSI6IjkyMzE1NzQ2Nzk5MiIsInN0YXR1cyI6IjEiLCJleHBpcmUiOjE3NzE5Mjc4OTAsImlzaG9udXAiOiIyMjMuMTIzLjE1LjI0MiIsImNvZGVjaG9ya2FtdWthbGEiOiJBbG9uZSJ9.3JFYpvM1ZD3WsH3nEXYzabOu_Zgv4oAGJaRGS4avdPc', found: 1
+2026-02-23 17:40:24 - Logged in user: id=113607, owncode=400660113602
+2026-02-23 17:40:24 - Loading ALL TEAM MEMBERS report for level: -1
+2026-02-23 17:40:24 - === PROCESSING LEVEL -1 (ALL LEVELS) ===
+2026-02-23 17:40:24 - Vyavahara records for user 113607 on 2026-02-21 00:00:00: 3
+2026-02-23 17:40:24 - Commission query: SELECT COALESCE(SUM(ayoga), 0) as sumayoga,
+                                         COUNT(DISTINCT koduvavanu) as bcs,
+                                         COALESCE(SUM(ketebida), 0) as bas
+                                       FROM vyavahara
+                                       WHERE balakedara = '113607' 
+                                       AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Commission results: sumayoga=18.7, bcs=1, bas=2200
+2026-02-23 17:40:24 - Thevani records on 2026-02-21 00:00:00: 50
+2026-02-23 17:40:24 - Recharge count query: SELECT COUNT(DISTINCT balakedara) as recharge_count
+                                                 FROM thevani
+                                                 WHERE sthiti = '1' 
+                                                 AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00')
+                                                 AND balakedara IN (
+                                                     SELECT id FROM shonu_subjects 
+                                                     WHERE code = '400660113602' 
+                                                     OR code1 = '400660113602' 
+                                                     OR code2 = '400660113602' 
+                                                     OR code3 = '400660113602' 
+                                                     OR code4 = '400660113602' 
+                                                     OR code5 = '400660113602'
+                                                 )
+2026-02-23 17:40:24 - Recharge amount query: SELECT COALESCE(SUM(motta), 0) as sumotta
+                                                  FROM thevani
+                                                  WHERE sthiti = '1' 
+                                                  AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00')
+                                                  AND balakedara IN (
+                                                      SELECT id FROM shonu_subjects 
+                                                      WHERE code = '400660113602' 
+                                                      OR code1 = '400660113602' 
+                                                      OR code2 = '400660113602' 
+                                                      OR code3 = '400660113602' 
+                                                      OR code4 = '400660113602' 
+                                                      OR code5 = '400660113602'
+                                                  )
+2026-02-23 17:40:24 - Recharge results: count=11, amount=196990
+2026-02-23 17:40:24 - First recharge query: SELECT COUNT(DISTINCT t1.balakedara) as first_count
+                                                 FROM thevani t1
+                                                 WHERE t1.sthiti = '1' 
+                                                 AND DATE(t1.dinankavannuracisi) = DATE('2026-02-21 00:00:00')
+                                                 AND t1.balakedara IN (
+                                                     SELECT id FROM shonu_subjects 
+                                                     WHERE code = '400660113602' 
+                                                     OR code1 = '400660113602' 
+                                                     OR code2 = '400660113602' 
+                                                     OR code3 = '400660113602' 
+                                                     OR code4 = '400660113602' 
+                                                     OR code5 = '400660113602'
+                                                 )
+                                                 AND NOT EXISTS (
+                                                     SELECT 1 FROM thevani t2 
+                                                     WHERE t2.balakedara = t1.balakedara 
+                                                     AND t2.sthiti = '1' 
+                                                     AND t2.dinankavannuracisi < DATE('2026-02-21 00:00:00')
+                                                 )
+2026-02-23 17:40:24 - First recharge amount query: SELECT COALESCE(SUM(t1.motta), 0) as sumotta
+                                                       FROM thevani t1
+                                                       WHERE t1.sthiti = '1' 
+                                                       AND DATE(t1.dinankavannuracisi) = DATE('2026-02-21 00:00:00')
+                                                       AND t1.balakedara IN (
+                                                           SELECT id FROM shonu_subjects 
+                                                           WHERE code = '400660113602' 
+                                                           OR code1 = '400660113602' 
+                                                           OR code2 = '400660113602' 
+                                                           OR code3 = '400660113602' 
+                                                           OR code4 = '400660113602' 
+                                                           OR code5 = '400660113602'
+                                                       )
+                                                       AND NOT EXISTS (
+                                                           SELECT 1 FROM thevani t2 
+                                                           WHERE t2.balakedara = t1.balakedara 
+                                                           AND t2.sthiti = '1' 
+                                                           AND t2.dinankavannuracisi < DATE('2026-02-21 00:00:00')
+                                                       )
+2026-02-23 17:40:24 - First recharge results: count=9, amount=182490
+2026-02-23 17:40:24 - Members query: SELECT id, codechorkamukala, status, createdate,
+                                            CASE
+                                                WHEN code = '400660113602' THEN 1
+                                                WHEN code1 = '400660113602' THEN 2
+                                                WHEN code2 = '400660113602' THEN 3
+                                                WHEN code3 = '400660113602' THEN 4
+                                                WHEN code4 = '400660113602' THEN 5
+                                                WHEN code5 = '400660113602' THEN 6
+                                                ELSE 0
+                                            END as member_level
+                                            FROM shonu_subjects
+                                            WHERE code = '400660113602'
+                                               OR code1 = '400660113602'
+                                               OR code2 = '400660113602'
+                                               OR code3 = '400660113602'
+                                               OR code4 = '400660113602'
+                                               OR code5 = '400660113602'
+                                            ORDER BY id DESC
+                                            LIMIT 0, 10
+2026-02-23 17:40:24 - Total team members: 366
+2026-02-23 17:40:24 - Processing member ID: 114014, Level: 5
+2026-02-23 17:40:24 - Bet query for member 114014: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114014: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114014' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114014: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114014' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114014 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114012, Level: 5
+2026-02-23 17:40:24 - Bet query for member 114012: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114012: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114012' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114012: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114012' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114012 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114011, Level: 5
+2026-02-23 17:40:24 - Bet query for member 114011: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114011: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114011' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114011: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114011' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114011 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114010, Level: 6
+2026-02-23 17:40:24 - Bet query for member 114010: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114010: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114010' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114010: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114010' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114010 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114009, Level: 6
+2026-02-23 17:40:24 - Bet query for member 114009: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114009: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114009' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114009: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114009' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114009 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114007, Level: 6
+2026-02-23 17:40:24 - Bet query for member 114007: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114007: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114007' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114007: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114007' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114007 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114006, Level: 6
+2026-02-23 17:40:24 - Bet query for member 114006: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114006: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114006' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114006: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114006' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114006 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114005, Level: 6
+2026-02-23 17:40:24 - Bet query for member 114005: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114005: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114005' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114005: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114005' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114005 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114004, Level: 6
+2026-02-23 17:40:24 - Bet query for member 114004: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114004: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114004' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114004: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114004' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114004 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Processing member ID: 114003, Level: 6
+2026-02-23 17:40:24 - Bet query for member 114003: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-21 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:24 - Recharge query for member 114003: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114003' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-21 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:24 - Commission query for member 114003: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114003' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-21 00:00:00')
+2026-02-23 17:40:24 - Member 114003 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:24 - Final data prepared with 10 members
+2026-02-23 17:40:24 - Response: {"code":0,"msg":"Succeed","msgCode":0,"serviceNowTime":"2026-02-23 17:40:24","data":{"data":{"rebateAmountSum":18.7,"betCountSum":1,"betAmountSum":2200,"recahrgeCount":11,"recahrgeAmountSum":196990,"firstRecahrgeCount":9,"firstRecahrgeAmountSum":182490},"list":[{"userID":114014,"lv":5,"nickName":"Member2HFRNVY0","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114012,"lv":5,"nickName":"Member54ZPSLFJ","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114011,"lv":5,"nickName":"MemberM0QGUY8N","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114010,"lv":6,"nickName":"Member5XWAHQL8","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114009,"lv":6,"nickName":"MemberT4GZ9FCQ","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114007,"lv":6,"nickName":"MemberH5D3EFIC","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114006,"lv":6,"nickName":"MemberZBTGAH25","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114005,"lv":6,"nickName":"MemberDRAH7TX9","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114004,"lv":6,"nickName":"MemberF5ZUX4ES","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114003,"lv":6,"nickName":"MemberT8UDZ2MR","userState":1,"searchTime":"2026-02-21 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0}],"pageNo":1,"totalCount":"366","totalPage":37}}
+2026-02-23 17:40:24 - ========== API CALL ENDED ==========
+
+
+2026-02-23 17:40:26 - ========== API CALL STARTED ==========
+2026-02-23 17:40:26 - POST data: {"pageNo":1,"pageSize":10,"lv":-1,"day":"2026-02-22 00:00:00","userId":null,"language":0,"random":"aad8ed3b9e5f402e9435d76566e351c2","signature":"904756E63E6E9F5C79F35D3DF0F95C65","timestamp":1771848624}
+2026-02-23 17:40:26 - Request params: day=2026-02-22 00:00:00, lv=-1, pageNo=1, pageSize=10
+2026-02-23 17:40:26 - Signature check: expected=904756E63E6E9F5C79F35D3DF0F95C65, got=904756E63E6E9F5C79F35D3DF0F95C65
+2026-02-23 17:40:26 - JWT validation: {"status":"Success","payload":{"id":"113607","mobile":"923157467992","status":"1","expire":1771927890,"ishonup":"223.123.15.242","codechorkamukala":"Alone"}}
+2026-02-23 17:40:26 - User query: SELECT akshinak, owncode, id
+                  FROM shonu_subjects
+                  WHERE akshinak = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExMzYwNyIsIm1vYmlsZSI6IjkyMzE1NzQ2Nzk5MiIsInN0YXR1cyI6IjEiLCJleHBpcmUiOjE3NzE5Mjc4OTAsImlzaG9udXAiOiIyMjMuMTIzLjE1LjI0MiIsImNvZGVjaG9ya2FtdWthbGEiOiJBbG9uZSJ9.3JFYpvM1ZD3WsH3nEXYzabOu_Zgv4oAGJaRGS4avdPc', found: 1
+2026-02-23 17:40:26 - Logged in user: id=113607, owncode=400660113602
+2026-02-23 17:40:26 - Loading ALL TEAM MEMBERS report for level: -1
+2026-02-23 17:40:26 - === PROCESSING LEVEL -1 (ALL LEVELS) ===
+2026-02-23 17:40:26 - Vyavahara records for user 113607 on 2026-02-22 00:00:00: 0
+2026-02-23 17:40:26 - Commission query: SELECT COALESCE(SUM(ayoga), 0) as sumayoga,
+                                         COUNT(DISTINCT koduvavanu) as bcs,
+                                         COALESCE(SUM(ketebida), 0) as bas
+                                       FROM vyavahara
+                                       WHERE balakedara = '113607' 
+                                       AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Commission results: sumayoga=0, bcs=0, bas=0
+2026-02-23 17:40:26 - Thevani records on 2026-02-22 00:00:00: 65
+2026-02-23 17:40:26 - Recharge count query: SELECT COUNT(DISTINCT balakedara) as recharge_count
+                                                 FROM thevani
+                                                 WHERE sthiti = '1' 
+                                                 AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                 AND balakedara IN (
+                                                     SELECT id FROM shonu_subjects 
+                                                     WHERE code = '400660113602' 
+                                                     OR code1 = '400660113602' 
+                                                     OR code2 = '400660113602' 
+                                                     OR code3 = '400660113602' 
+                                                     OR code4 = '400660113602' 
+                                                     OR code5 = '400660113602'
+                                                 )
+2026-02-23 17:40:26 - Recharge amount query: SELECT COALESCE(SUM(motta), 0) as sumotta
+                                                  FROM thevani
+                                                  WHERE sthiti = '1' 
+                                                  AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                  AND balakedara IN (
+                                                      SELECT id FROM shonu_subjects 
+                                                      WHERE code = '400660113602' 
+                                                      OR code1 = '400660113602' 
+                                                      OR code2 = '400660113602' 
+                                                      OR code3 = '400660113602' 
+                                                      OR code4 = '400660113602' 
+                                                      OR code5 = '400660113602'
+                                                  )
+2026-02-23 17:40:26 - Recharge results: count=17, amount=489820
+2026-02-23 17:40:26 - First recharge query: SELECT COUNT(DISTINCT t1.balakedara) as first_count
+                                                 FROM thevani t1
+                                                 WHERE t1.sthiti = '1' 
+                                                 AND DATE(t1.dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                 AND t1.balakedara IN (
+                                                     SELECT id FROM shonu_subjects 
+                                                     WHERE code = '400660113602' 
+                                                     OR code1 = '400660113602' 
+                                                     OR code2 = '400660113602' 
+                                                     OR code3 = '400660113602' 
+                                                     OR code4 = '400660113602' 
+                                                     OR code5 = '400660113602'
+                                                 )
+                                                 AND NOT EXISTS (
+                                                     SELECT 1 FROM thevani t2 
+                                                     WHERE t2.balakedara = t1.balakedara 
+                                                     AND t2.sthiti = '1' 
+                                                     AND t2.dinankavannuracisi < DATE('2026-02-22 00:00:00')
+                                                 )
+2026-02-23 17:40:26 - First recharge amount query: SELECT COALESCE(SUM(t1.motta), 0) as sumotta
+                                                       FROM thevani t1
+                                                       WHERE t1.sthiti = '1' 
+                                                       AND DATE(t1.dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                       AND t1.balakedara IN (
+                                                           SELECT id FROM shonu_subjects 
+                                                           WHERE code = '400660113602' 
+                                                           OR code1 = '400660113602' 
+                                                           OR code2 = '400660113602' 
+                                                           OR code3 = '400660113602' 
+                                                           OR code4 = '400660113602' 
+                                                           OR code5 = '400660113602'
+                                                       )
+                                                       AND NOT EXISTS (
+                                                           SELECT 1 FROM thevani t2 
+                                                           WHERE t2.balakedara = t1.balakedara 
+                                                           AND t2.sthiti = '1' 
+                                                           AND t2.dinankavannuracisi < DATE('2026-02-22 00:00:00')
+                                                       )
+2026-02-23 17:40:26 - First recharge results: count=13, amount=47300
+2026-02-23 17:40:26 - Members query: SELECT id, codechorkamukala, status, createdate,
+                                            CASE
+                                                WHEN code = '400660113602' THEN 1
+                                                WHEN code1 = '400660113602' THEN 2
+                                                WHEN code2 = '400660113602' THEN 3
+                                                WHEN code3 = '400660113602' THEN 4
+                                                WHEN code4 = '400660113602' THEN 5
+                                                WHEN code5 = '400660113602' THEN 6
+                                                ELSE 0
+                                            END as member_level
+                                            FROM shonu_subjects
+                                            WHERE code = '400660113602'
+                                               OR code1 = '400660113602'
+                                               OR code2 = '400660113602'
+                                               OR code3 = '400660113602'
+                                               OR code4 = '400660113602'
+                                               OR code5 = '400660113602'
+                                            ORDER BY id DESC
+                                            LIMIT 0, 10
+2026-02-23 17:40:26 - Total team members: 366
+2026-02-23 17:40:26 - Processing member ID: 114014, Level: 5
+2026-02-23 17:40:26 - Bet query for member 114014: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114014' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114014: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114014' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114014: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114014' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114014 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114012, Level: 5
+2026-02-23 17:40:26 - Bet query for member 114012: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114012' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114012: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114012' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114012: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114012' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114012 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114011, Level: 5
+2026-02-23 17:40:26 - Bet query for member 114011: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114011' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114011: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114011' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114011: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114011' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114011 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114010, Level: 6
+2026-02-23 17:40:26 - Bet query for member 114010: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114010' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114010: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114010' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114010: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114010' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114010 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114009, Level: 6
+2026-02-23 17:40:26 - Bet query for member 114009: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114009' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114009: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114009' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114009: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114009' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114009 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114007, Level: 6
+2026-02-23 17:40:26 - Bet query for member 114007: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114007' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114007: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114007' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114007: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114007' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114007 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114006, Level: 6
+2026-02-23 17:40:26 - Bet query for member 114006: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114006' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114006: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114006' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114006: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114006' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114006 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114005, Level: 6
+2026-02-23 17:40:26 - Bet query for member 114005: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114005' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114005: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114005' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114005: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114005' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114005 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114004, Level: 6
+2026-02-23 17:40:26 - Bet query for member 114004: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114004' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114004: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114004' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114004: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114004' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114004 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Processing member ID: 114003, Level: 6
+2026-02-23 17:40:26 - Bet query for member 114003: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114003' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:26 - Recharge query for member 114003: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114003' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:26 - Commission query for member 114003: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114003' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:26 - Member 114003 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:26 - Final data prepared with 10 members
+2026-02-23 17:40:26 - Response: {"code":0,"msg":"Succeed","msgCode":0,"serviceNowTime":"2026-02-23 17:40:26","data":{"data":{"rebateAmountSum":0,"betCountSum":0,"betAmountSum":0,"recahrgeCount":17,"recahrgeAmountSum":489820,"firstRecahrgeCount":13,"firstRecahrgeAmountSum":47300},"list":[{"userID":114014,"lv":5,"nickName":"Member2HFRNVY0","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114012,"lv":5,"nickName":"Member54ZPSLFJ","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114011,"lv":5,"nickName":"MemberM0QGUY8N","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114010,"lv":6,"nickName":"Member5XWAHQL8","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114009,"lv":6,"nickName":"MemberT4GZ9FCQ","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114007,"lv":6,"nickName":"MemberH5D3EFIC","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114006,"lv":6,"nickName":"MemberZBTGAH25","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114005,"lv":6,"nickName":"MemberDRAH7TX9","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114004,"lv":6,"nickName":"MemberF5ZUX4ES","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114003,"lv":6,"nickName":"MemberT8UDZ2MR","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0}],"pageNo":1,"totalCount":"366","totalPage":37}}
+2026-02-23 17:40:26 - ========== API CALL ENDED ==========
+
+
+2026-02-23 17:40:27 - ========== API CALL STARTED ==========
+2026-02-23 17:40:27 - POST data: {"pageNo":2,"pageSize":10,"lv":-1,"day":"2026-02-22 00:00:00","userId":null,"language":0,"random":"d2b04cbab600459e99ec90140c13ffe8","signature":"FFCCEF26BEB867C7163D3BA315351206","timestamp":1771848625}
+2026-02-23 17:40:27 - Request params: day=2026-02-22 00:00:00, lv=-1, pageNo=2, pageSize=10
+2026-02-23 17:40:27 - Signature check: expected=FFCCEF26BEB867C7163D3BA315351206, got=FFCCEF26BEB867C7163D3BA315351206
+2026-02-23 17:40:27 - JWT validation: {"status":"Success","payload":{"id":"113607","mobile":"923157467992","status":"1","expire":1771927890,"ishonup":"223.123.15.242","codechorkamukala":"Alone"}}
+2026-02-23 17:40:27 - User query: SELECT akshinak, owncode, id
+                  FROM shonu_subjects
+                  WHERE akshinak = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExMzYwNyIsIm1vYmlsZSI6IjkyMzE1NzQ2Nzk5MiIsInN0YXR1cyI6IjEiLCJleHBpcmUiOjE3NzE5Mjc4OTAsImlzaG9udXAiOiIyMjMuMTIzLjE1LjI0MiIsImNvZGVjaG9ya2FtdWthbGEiOiJBbG9uZSJ9.3JFYpvM1ZD3WsH3nEXYzabOu_Zgv4oAGJaRGS4avdPc', found: 1
+2026-02-23 17:40:27 - Logged in user: id=113607, owncode=400660113602
+2026-02-23 17:40:27 - Loading ALL TEAM MEMBERS report for level: -1
+2026-02-23 17:40:27 - === PROCESSING LEVEL -1 (ALL LEVELS) ===
+2026-02-23 17:40:27 - Vyavahara records for user 113607 on 2026-02-22 00:00:00: 0
+2026-02-23 17:40:27 - Commission query: SELECT COALESCE(SUM(ayoga), 0) as sumayoga,
+                                         COUNT(DISTINCT koduvavanu) as bcs,
+                                         COALESCE(SUM(ketebida), 0) as bas
+                                       FROM vyavahara
+                                       WHERE balakedara = '113607' 
+                                       AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:27 - Commission results: sumayoga=0, bcs=0, bas=0
+2026-02-23 17:40:27 - Thevani records on 2026-02-22 00:00:00: 65
+2026-02-23 17:40:27 - Recharge count query: SELECT COUNT(DISTINCT balakedara) as recharge_count
+                                                 FROM thevani
+                                                 WHERE sthiti = '1' 
+                                                 AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                 AND balakedara IN (
+                                                     SELECT id FROM shonu_subjects 
+                                                     WHERE code = '400660113602' 
+                                                     OR code1 = '400660113602' 
+                                                     OR code2 = '400660113602' 
+                                                     OR code3 = '400660113602' 
+                                                     OR code4 = '400660113602' 
+                                                     OR code5 = '400660113602'
+                                                 )
+2026-02-23 17:40:27 - Recharge amount query: SELECT COALESCE(SUM(motta), 0) as sumotta
+                                                  FROM thevani
+                                                  WHERE sthiti = '1' 
+                                                  AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                  AND balakedara IN (
+                                                      SELECT id FROM shonu_subjects 
+                                                      WHERE code = '400660113602' 
+                                                      OR code1 = '400660113602' 
+                                                      OR code2 = '400660113602' 
+                                                      OR code3 = '400660113602' 
+                                                      OR code4 = '400660113602' 
+                                                      OR code5 = '400660113602'
+                                                  )
+2026-02-23 17:40:27 - Recharge results: count=17, amount=489820
+2026-02-23 17:40:27 - First recharge query: SELECT COUNT(DISTINCT t1.balakedara) as first_count
+                                                 FROM thevani t1
+                                                 WHERE t1.sthiti = '1' 
+                                                 AND DATE(t1.dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                 AND t1.balakedara IN (
+                                                     SELECT id FROM shonu_subjects 
+                                                     WHERE code = '400660113602' 
+                                                     OR code1 = '400660113602' 
+                                                     OR code2 = '400660113602' 
+                                                     OR code3 = '400660113602' 
+                                                     OR code4 = '400660113602' 
+                                                     OR code5 = '400660113602'
+                                                 )
+                                                 AND NOT EXISTS (
+                                                     SELECT 1 FROM thevani t2 
+                                                     WHERE t2.balakedara = t1.balakedara 
+                                                     AND t2.sthiti = '1' 
+                                                     AND t2.dinankavannuracisi < DATE('2026-02-22 00:00:00')
+                                                 )
+2026-02-23 17:40:27 - First recharge amount query: SELECT COALESCE(SUM(t1.motta), 0) as sumotta
+                                                       FROM thevani t1
+                                                       WHERE t1.sthiti = '1' 
+                                                       AND DATE(t1.dinankavannuracisi) = DATE('2026-02-22 00:00:00')
+                                                       AND t1.balakedara IN (
+                                                           SELECT id FROM shonu_subjects 
+                                                           WHERE code = '400660113602' 
+                                                           OR code1 = '400660113602' 
+                                                           OR code2 = '400660113602' 
+                                                           OR code3 = '400660113602' 
+                                                           OR code4 = '400660113602' 
+                                                           OR code5 = '400660113602'
+                                                       )
+                                                       AND NOT EXISTS (
+                                                           SELECT 1 FROM thevani t2 
+                                                           WHERE t2.balakedara = t1.balakedara 
+                                                           AND t2.sthiti = '1' 
+                                                           AND t2.dinankavannuracisi < DATE('2026-02-22 00:00:00')
+                                                       )
+2026-02-23 17:40:27 - First recharge results: count=13, amount=47300
+2026-02-23 17:40:27 - Members query: SELECT id, codechorkamukala, status, createdate,
+                                            CASE
+                                                WHEN code = '400660113602' THEN 1
+                                                WHEN code1 = '400660113602' THEN 2
+                                                WHEN code2 = '400660113602' THEN 3
+                                                WHEN code3 = '400660113602' THEN 4
+                                                WHEN code4 = '400660113602' THEN 5
+                                                WHEN code5 = '400660113602' THEN 6
+                                                ELSE 0
+                                            END as member_level
+                                            FROM shonu_subjects
+                                            WHERE code = '400660113602'
+                                               OR code1 = '400660113602'
+                                               OR code2 = '400660113602'
+                                               OR code3 = '400660113602'
+                                               OR code4 = '400660113602'
+                                               OR code5 = '400660113602'
+                                            ORDER BY id DESC
+                                            LIMIT 10, 10
+2026-02-23 17:40:27 - Total team members: 366
+2026-02-23 17:40:27 - Processing member ID: 114002, Level: 6
+2026-02-23 17:40:27 - Bet query for member 114002: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114002' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114002' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114002' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:27 - Recharge query for member 114002: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114002' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:27 - Commission query for member 114002: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114002' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:27 - Member 114002 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:27 - Processing member ID: 114001, Level: 5
+2026-02-23 17:40:27 - Bet query for member 114001: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114001' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114001' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114001' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:27 - Recharge query for member 114001: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114001' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:27 - Commission query for member 114001: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114001' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:27 - Member 114001 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:27 - Processing member ID: 114000, Level: 6
+2026-02-23 17:40:27 - Bet query for member 114000: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '114000' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '114000' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '114000' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:27 - Recharge query for member 114000: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '114000' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:28 - Commission query for member 114000: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '114000' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:28 - Member 114000 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:28 - Processing member ID: 113999, Level: 6
+2026-02-23 17:40:28 - Bet query for member 113999: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '113999' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '113999' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '113999' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:28 - Recharge query for member 113999: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '113999' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:28 - Commission query for member 113999: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '113999' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:28 - Member 113999 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:28 - Processing member ID: 113998, Level: 5
+2026-02-23 17:40:28 - Bet query for member 113998: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '113998' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '113998' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '113998' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:28 - Recharge query for member 113998: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '113998' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:28 - Commission query for member 113998: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '113998' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:28 - Member 113998 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:28 - Processing member ID: 113997, Level: 5
+2026-02-23 17:40:28 - Bet query for member 113997: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '113997' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '113997' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '113997' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:28 - Recharge query for member 113997: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '113997' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:28 - Commission query for member 113997: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '113997' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:28 - Member 113997 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:28 - Processing member ID: 113996, Level: 6
+2026-02-23 17:40:28 - Bet query for member 113996: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '113996' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '113996' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '113996' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:28 - Recharge query for member 113996: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '113996' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:28 - Commission query for member 113996: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '113996' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:28 - Member 113996 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:28 - Processing member ID: 113995, Level: 5
+2026-02-23 17:40:28 - Bet query for member 113995: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '113995' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '113995' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '113995' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:28 - Recharge query for member 113995: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '113995' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:28 - Commission query for member 113995: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '113995' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:28 - Member 113995 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:28 - Processing member ID: 113994, Level: 6
+2026-02-23 17:40:28 - Bet query for member 113994: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '113994' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '113994' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '113994' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:28 - Recharge query for member 113994: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '113994' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:28 - Commission query for member 113994: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '113994' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:28 - Member 113994 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:28 - Processing member ID: 113993, Level: 6
+2026-02-23 17:40:28 - Bet query for member 113993: SELECT COALESCE(SUM(ketebida), 0) as total_bet
+                                                     FROM (
+                                                         SELECT ketebida FROM bajikattuttate 
+                                                         WHERE byabaharkarta = '113993' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_aidudi 
+                                                         WHERE byabaharkarta = '113993' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                         UNION ALL 
+                                                         SELECT ketebida FROM bajikattuttate_kemuru 
+                                                         WHERE byabaharkarta = '113993' 
+                                                         AND DATE(tiarikala) = DATE('2026-02-22 00:00:00') 
+                                                     ) AS combined_bets
+2026-02-23 17:40:28 - Recharge query for member 113993: SELECT COALESCE(SUM(motta), 0) as total_recharge
+                                                    FROM thevani
+                                                    WHERE balakedara = '113993' 
+                                                    AND DATE(dinankavannuracisi) = DATE('2026-02-22 00:00:00') 
+                                                    AND sthiti = '1'
+2026-02-23 17:40:28 - Commission query for member 113993: SELECT COALESCE(SUM(ayoga), 0) as total_commission
+                                                      FROM vyavahara
+                                                      WHERE koduvavanu = '113993' 
+                                                      AND balakedara = '113607' 
+                                                      AND DATE(tiarikala) = DATE('2026-02-22 00:00:00')
+2026-02-23 17:40:28 - Member 113993 results: bet=0, recharge=0, commission=0
+2026-02-23 17:40:28 - Final data prepared with 10 members
+2026-02-23 17:40:28 - Response: {"code":0,"msg":"Succeed","msgCode":0,"serviceNowTime":"2026-02-23 17:40:27","data":{"data":{"rebateAmountSum":0,"betCountSum":0,"betAmountSum":0,"recahrgeCount":17,"recahrgeAmountSum":489820,"firstRecahrgeCount":13,"firstRecahrgeAmountSum":47300},"list":[{"userID":114002,"lv":6,"nickName":"Member64XGSVZJ","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114001,"lv":5,"nickName":"Member58SBEOKT","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":114000,"lv":6,"nickName":"MemberUGN5QEB4","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":113999,"lv":6,"nickName":"MemberF3HS6DQW","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":113998,"lv":5,"nickName":"Member3C1ZXION","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":113997,"lv":5,"nickName":"MemberX34PMOET","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":113996,"lv":6,"nickName":"MemberBGOA1CJ5","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":113995,"lv":5,"nickName":"MemberBX4Y6TQO","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":113994,"lv":6,"nickName":"MemberZTM3DCX1","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0},{"userID":113993,"lv":6,"nickName":"Member8YO9IBVL","userState":1,"searchTime":"2026-02-22 00:00:00","lotteryAmount":0,"rechargeAmount":0,"rebateAmount":0}],"pageNo":2,"totalCount":"366","totalPage":37}}
+2026-02-23 17:40:28 - ========== API CALL ENDED ==========
+
+
