@@ -1,5 +1,6 @@
 <?php 
 include "../../conn.php";
+require_once __DIR__ . '/../../veegame_legacy_gate.php';
 include "../../functions2.php";
 
 header('Content-Type: application/json; charset=utf-8');

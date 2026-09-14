@@ -110,7 +110,9 @@ function api_user(): array
         api_send(null, 4, 'No operation permission', 401, 2);
     }
 
+    if (strlen($token)>8192 || !preg_match('/^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/',$token)) api_send(null,4,'No operation permission',401,2);
     $verified = json_decode((string)is_jwt_valid($token), true);
+    if (isset($verified['payload']['exp']) && (!is_numeric($verified['payload']['exp']) || (int)$verified['payload']['exp']<=time())) api_send(null,4,'Session expired',401,2);
     $id = (int)($verified['payload']['id'] ?? 0);
     if (!is_array($verified) || ($verified['status'] ?? '') !== 'Success' || $id < 1) {
         api_send(null, 4, 'No operation permission', 401, 2);

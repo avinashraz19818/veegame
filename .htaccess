@@ -6,3 +6,13 @@
   AddHandler application/x-httpd-ea-php82 .php .php8 .phtml
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
+
+# BEGIN VEEGAME SAAS V1 - targeted API/draw routing, preserves cPanel handler
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteRule ^api/Lottery/([A-Za-z]+)(?:\.php)?/?$ api-live-v4/Lottery/index.php?action=$1 [END,QSA]
+RewriteRule ^WinGo/(WinGo_(?:30S|1M|3M|5M))/GetHistoryIssuePage\.json$ draw-live-v4/index.php?lottery=WinGo&gameCode=$1&history=1 [END,QSA]
+RewriteRule ^WinGo/(WinGo_(?:30S|1M|3M|5M))\.json$ draw-live-v4/index.php?lottery=WinGo&gameCode=$1 [END,QSA]
+</IfModule>
+# END VEEGAME SAAS V1

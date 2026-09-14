@@ -25,10 +25,7 @@ if ($gameCode !== '' && !isset($games[$gameCode])) {
     api_send(null, 7, 'Param is Invalid', 200, 6);
 }
 
-$forwardedProto = strtolower(trim(explode(',', (string)($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? ''))[0]));
-$scheme = ($forwardedProto === 'https' || (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')) ? 'https' : 'http';
-$host = preg_replace('/[^A-Za-z0-9.:-]/', '', (string)($_SERVER['HTTP_HOST'] ?? 'damansclub.com'));
-$origin = $scheme . '://' . ($host !== '' ? $host : 'damansclub.com');
+$origin = 'https://veergame.club9.eu.cc';
 $language = preg_replace('/[^A-Za-z-]/', '', (string)($body['language'] ?? 'en')) ?: 'en';
 
 $url = $origin . '/?Token=' . rawurlencode((string)$user['token'])

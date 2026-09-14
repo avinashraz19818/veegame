@@ -1,0 +1,92 @@
+{
+  "file": "veegame-update/veegame-saas-migration-v1.zip",
+  "bytes": 54947,
+  "sha256": "9fa08d16d9ff6bc8b36873ef88f733ade9b8da3f1cfa74f1dc5907553193305d",
+  "entries": 22,
+  "payload": {
+    ".htaccess": {
+      "bytes": 848,
+      "sha256": "227a0d6f7971def33e66e92493138a651cb933a2dabeb883929a9495ed393b97"
+    },
+    "README-VEEGAME-MIGRATION.md": {
+      "bytes": 10384,
+      "sha256": "55b722717c67e6c0c4924d220a3d93f15bd1bca8bedee7d9c971462b6045c9a1"
+    },
+    "assets/js/main.vue_vue_type_style_index_0_scoped_d3b4a951_lang-BQvK2MsY.js": {
+      "bytes": 49738,
+      "sha256": "d3c66f5d90ee84c6edc21e292bd364d6a7021a27c8c7c4cb70c53731ca8f408d"
+    },
+    "assets/js/veegame-migration-notice.js": {
+      "bytes": 1560,
+      "sha256": "0697932b3e6f26e97c9a5b74b571033916d6f7f857f37dc90fa1da0b76add942"
+    },
+    "evenvessis/api/webapi/GetGameUrl.php": {
+      "bytes": 1460,
+      "sha256": "ccac62d310ce40f6f93ad1e267c451bfb237b70ffb7fb84c94c8942f83559e02"
+    },
+    "evenvessis/api/webapi/_common.php": {
+      "bytes": 6195,
+      "sha256": "0dc3b5ec653c41f2fbec3d701e70b0784ec3e9f0676898b024038c00d0d89cdb"
+    },
+    "evenvessis/api/webapi/GameBetting.php": {
+      "bytes": 11255,
+      "sha256": "57bb3423f50d76fc4988dff32333cb961edac8d3974f6e9fc6b45512c0dded2b"
+    },
+    "evenvessis/app_core_live_v4.php": {
+      "bytes": 2807,
+      "sha256": "7d0376ef0132cb0b8952a316f60e3bf64b2753fa3569a8ede761e0b59f3691ea"
+    },
+    "evenvessis/veegame_legacy_gate.php": {
+      "bytes": 753,
+      "sha256": "7338a89d216a7ed7515304f7aff68f82c4dafb2667e417674b84addc68d22395"
+    },
+    "api-live-v4/Lottery/index.php": {
+      "bytes": 2653,
+      "sha256": "3251b12d9bac6212f69adf6a9b5fdf279139c4b07d373cf5b3b9fbd0aafc6638"
+    },
+    "draw-live-v4/index.php": {
+      "bytes": 1009,
+      "sha256": "4fc4545aaae640b696d375b426abcb4618939bd4290df32473d58c01f6696ead"
+    },
+    "saas_lottery/.htaccess": {
+      "bytes": 19,
+      "sha256": "fa28d421a28ed9b6f4b997d5119c2b8adbacff6e2dd119a179b71230f9664934"
+    },
+    "saas_lottery/bootstrap_live_v4.php": {
+      "bytes": 40300,
+      "sha256": "453ea256e97c866d0383de1cc23f0a3a65bb0bb44ace1b0bd2667727f254b32e"
+    },
+    "saas_lottery/config_live_v4.php": {
+      "bytes": 679,
+      "sha256": "9224ca90b58c85d5ba0e1b32364d7e132cd0efb1cb0da39df149a8ccaeb1a707"
+    },
+    "saas_lottery/provider.php": {
+      "bytes": 7311,
+      "sha256": "d65251ed10cd1b05776befd93c2a9f1cf5cb4f211f4c029432a4adcf9899740d"
+    },
+    "saas_lottery/schema.php": {
+      "bytes": 4126,
+      "sha256": "0ed55055ef6eb024e84de76afb56bab6b2302803db474066d414f4965ad3df4f"
+    },
+    "saas_lottery/schema.sql": {
+      "bytes": 2508,
+      "sha256": "ce5c02e84cfa1f8575ac3cb8b3e4a4222187c0d7a435a739f838428a6d5601dd"
+    },
+    "saas_lottery/legacy_archive.php": {
+      "bytes": 4357,
+      "sha256": "4ddd67fcca5b37336352c25e4252ff4880cf5d31e3d6baeb650192f9147873ce"
+    },
+    "tools/veegame-migration/.htaccess": {
+      "bytes": 19,
+      "sha256": "fa28d421a28ed9b6f4b997d5119c2b8adbacff6e2dd119a179b71230f9664934"
+    },
+    "tools/veegame-migration/migrate.php": {
+      "bytes": 8002,
+      "sha256": "246e51a3e4628b6e8fc098ffee4e55bdead950aefd34eb839cd3c9be18299454"
+    },
+    "veegame-legacy-history.html": {
+      "bytes": 2978,
+      "sha256": "76cacd7736118457ab1d930770d8ffd91c566b590845b4ef23c632d2582c6e8e"
+    }
+  }
+}
