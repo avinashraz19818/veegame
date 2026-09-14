@@ -44,10 +44,22 @@ out('==========================================================');
 out('');
 
 /* ---------- DB connection (site's own connection) ---------- */
-$siteRoot = dirname(__DIR__);
+$siteRoot = '';
+$candidates = array(
+    __DIR__ . '/serive/samparka.php',          // file placed at site root
+    dirname(__DIR__) . '/serive/samparka.php', // file placed in a subfolder
+);
+foreach ($candidates as $cand) {
+    if (is_file($cand)) { $siteRoot = $cand; break; }
+}
+if ($siteRoot === '') {
+    out('FATAL: serive/samparka.php not found next to this file. Make sure this file is in the site root (the same folder as index.html and serive/).');
+    exit;
+}
+out('Using DB connection file: ' . $siteRoot);
 ob_start();
 try {
-    require $siteRoot . '/serive/samparka.php';
+    require $siteRoot;
 } finally {
     ob_end_clean();
 }
