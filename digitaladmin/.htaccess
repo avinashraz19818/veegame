@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.php
+<FilesMatch "\.(?:sql|log|txt|json|bak|zip|env|ini)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^(?!(?:index|login|setup|logout|action)\.php$).*\.php$">
+  Require all denied
+</FilesMatch>
