@@ -1,0 +1,27 @@
+{
+  "repository": "avinashraz19818/shreewin",
+  "commit": "86e5048e8b07a04e5fa4e3825db77dfa917ac1bd",
+  "exact_assets": {
+    "assets/vendor/css/rtl/core.css": {
+      "bytes": 893939,
+      "sha256": "76ca90a0cfa87cb393e39352736fdd78385bef483c8572c91adc0f6f1f67a878"
+    },
+    "assets/vendor/css/rtl/theme-default.css": {
+      "bytes": 50308,
+      "sha256": "84a024954701fb04afaf0ffa8befc5713def5d716631f6114b333bb364780aba"
+    },
+    "assets/vendor/fonts/remixicon/remixicon.css": {
+      "bytes": 151421,
+      "sha256": "f97452a1a388e8a18d1d1cacd874710ea1f1299b75e40cc47d67d2bb2beb1363"
+    },
+    "assets/vendor/fonts/remixicon/remixicon.woff2": {
+      "bytes": 165440,
+      "sha256": "00e20f1912b610fd476c271b80e2d76d107790539119482c9e90f207ddd606b6"
+    }
+  },
+  "adapted": [
+    "login.php inline CSS -> assets/login.css",
+    "index.php/users.php/layout-menu.php layout conventions -> lib/view.php",
+    "native user/deposit/withdrawal queries -> lib/data.php; auth and write handlers rewritten"
+  ]
+}
