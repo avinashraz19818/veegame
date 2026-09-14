@@ -88,7 +88,7 @@ button:hover{
 <h2>🔎 UID SEARCH & OPEN</h2>
 
 <!-- DAMAN PRO ADMIN BUTTON -->
-<a class="telegram" href="https://t.me/zayro_o" target="_blank">SHREE WIN PRO ADMIN</a>
+<a class="telegram" href="https://t.me/zayro_o" target="_blank">VEERGAME PRO ADMIN</a>
 
 <?php if(isset($msg)){ ?>
 <div class="msg"><?php echo $msg; ?></div>

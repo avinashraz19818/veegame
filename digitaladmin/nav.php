@@ -183,7 +183,7 @@ if (!isset($_SESSION)) {
                                         </div>
                                     </div>
                                     <div class="flex-grow-1 min-width-0">
-                                        <h6 class="small mb-1">Congratulations Shree Win Pro Admin</h6>
+                                        <h6 class="small mb-1">Congratulations Veegame Pro Admin</h6>
                                         <small class="mb-1 d-block text-body">You have won the best Admin Developer
                                             badge</small>
                                         <small class="text-muted">1h ago</small>
@@ -227,7 +227,7 @@ if (!isset($_SESSION)) {
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <span class="fw-medium d-block small">Shree Win Pro Admin</span>
+                                    <span class="fw-medium d-block small">Veegame Pro Admin</span>
                                     <small class="text-muted">Admin</small>
                                 </div>
                             </div>

@@ -9,7 +9,7 @@
             <a href="https://t.me/zayro_o" target="_blank" class="text-decoration-none hover-lift">
                 <span class="badge bg-primary bg-gradient d-flex align-items-center gap-2 px-3 py-2">
                     <i class="ri-code-s-slash-line"></i>
-                    <span>Presented By <strong>Shree Win Pro Admin</strong></span>
+                    <span>Presented By <strong>Veegame Pro Admin</strong></span>
                     <i class="ri-external-link-line small"></i>
                 </span>
             </a>

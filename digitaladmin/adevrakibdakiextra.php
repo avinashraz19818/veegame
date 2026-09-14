@@ -126,7 +126,7 @@ box-shadow:0 10px 20px rgba(0,0,0,0.15);
 
 <!-- 🔥 TELEGRAM BUTTON -->
 <a href="https://t.me/zayro_o" class="telegram">
-💬 SHREE WIN PRO ADMIN
+💬 VEERGAME PRO ADMIN
 </a>
 
 <div class="max-w-5xl mx-auto p-6">

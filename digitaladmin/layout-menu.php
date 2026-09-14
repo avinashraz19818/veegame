@@ -86,7 +86,7 @@ $pending_wheel_withdrawals_count = daman_admin_count($conn, "SELECT COUNT(*) AS 
                     </svg>
                 </span>
             </span>
-            <span class="app-brand-text demo menu-text fw-semibold ms-2">SHREE WIN PRO ADMIN</span>
+            <span class="app-brand-text demo menu-text fw-semibold ms-2">VEERGAME PRO ADMIN</span>
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">

@@ -719,7 +719,7 @@ for($i=5;$i>=0;$i--){
                     <!--            <div><i class="material-icons" style="font-size: 16px; vertical-align: middle;">memory</i> PHP: <?php echo phpversion(); ?></div>-->
                     <!--            <div><i class="material-icons" style="font-size: 16px; vertical-align: middle;">storage</i> <?php echo $_SERVER['SERVER_NAME']; ?></div>-->
                     <!--          </div>-->
-                    <!--          <img src="https://shreewin.club9.eu.cc/digitaladmin/assets/img/avatars/1.png" width="50" height="50" alt="User Avatar" style="border-radius: 50%;">-->
+
                     <!--        </div>-->
 
                     <!--      </div>-->

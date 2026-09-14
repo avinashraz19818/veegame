@@ -239,7 +239,7 @@
             <div class="top-neon-line"></div>
             
             <div class="brand-zone">
-                <i class="ri-flashlight-fill" style="color: #ffd700; margin-right: 5px;"></i>SHREE WIN PRO ADMIN
+                <i class="ri-flashlight-fill" style="color: #ffd700; margin-right: 5px;"></i>VEERGAME PRO ADMIN
             </div>
 
             <h2 class="section-title">SYSTEM LOGIN</h2>

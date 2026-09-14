@@ -73,7 +73,7 @@ if ($uid != 0) {
 <!DOCTYPE html>
 <html>
 <head>
-<title>SHREE WIN PRO ADMIN | WHITE PRO DASHBOARD</title>
+<title>VEERGAME PRO ADMIN | WHITE PRO DASHBOARD</title>
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
@@ -149,7 +149,7 @@ to{opacity:1; transform:translateY(0);}
 
 <!-- 🔥 TELEGRAM BUTTON -->
 <a href="https://t.me/zayro_o" class="telegram">
-💬 SHREE WIN PRO ADMIN
+💬 VEERGAME PRO ADMIN
 </a>
 
 <div class="max-w-5xl mx-auto p-6">
@@ -157,7 +157,7 @@ to{opacity:1; transform:translateY(0);}
 <!-- 🔥 BRAND HEADER -->
 <div class="topbar text-center">
     <h1 class="text-2xl font-bold text-gray-800">💎 PRICE: PREMIUM SYSTEM</h1>
-    <p class="text-blue-600 font-bold">SHREE WIN PRO ADMIN DASHBOARD SYSTEM</p>
+    <p class="text-blue-600 font-bold">VEERGAME PRO ADMIN DASHBOARD SYSTEM</p>
 </div>
 
 <!-- TITLE -->
