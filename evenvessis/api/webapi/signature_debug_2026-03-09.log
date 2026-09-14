@@ -1,0 +1,14 @@
+
+========== 2026-03-09 01:25:17 ==========
+POST: {"codeType":-1,"language":0,"random":"c0eff26779df40cdb7524e572b42cd34","signature":"D4162C720D9D5C4D4A3C4087E8B557C7","timestamp":1772999717}
+Decoded: Array
+(
+    [codeType] => -1
+    [language] => 0
+    [random] => c0eff26779df40cdb7524e572b42cd34
+    [signature] => D4162C720D9D5C4D4A3C4087E8B557C7
+    [timestamp] => 1772999717
+)
+
+Processing signature: D4162C720D9D5C4D4A3C4087E8B557C7
+❌ No match found for signature: D4162C720D9D5C4D4A3C4087E8B557C7

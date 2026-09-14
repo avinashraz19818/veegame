@@ -1,0 +1,442 @@
+[2026-02-24 09:24:21] ========================================
+[2026-02-24 09:24:21] === Game Callback Received ===
+[2026-02-24 09:24:21] Request Method: POST
+[2026-02-24 09:24:21] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 09:24:21] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 09:24:21] Raw input: {"user_id":"113707","full_user_id":"h6c77c2c113707","game_code":"664fba4da609ee82b78820b1f570f4ad","bet_amount":10,"win_amount":0,"serial_number":"a508d0bc-8a80-39d6-a94b-ffbdc1182726","game_round":"12768417928556787936","vendor_code":"664fba4da609ee82b78820b1f570f4ad","timestamp":"2026-02-24 01:24:20","currency_code":"PKR"}
+[2026-02-24 09:24:21] Parsed input: {
+    "user_id": "113707",
+    "full_user_id": "h6c77c2c113707",
+    "game_code": "664fba4da609ee82b78820b1f570f4ad",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "a508d0bc-8a80-39d6-a94b-ffbdc1182726",
+    "game_round": "12768417928556787936",
+    "vendor_code": "664fba4da609ee82b78820b1f570f4ad",
+    "timestamp": "2026-02-24 01:24:20",
+    "currency_code": "PKR"
+}
+[2026-02-24 09:24:21] Direct match found for user_id: 113707
+[2026-02-24 09:24:21] User ID: 113707
+[2026-02-24 09:24:21] Game: 664fba4da609ee82b78820b1f570f4ad, Round: 12768417928556787936
+[2026-02-24 09:24:21] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 09:24:21] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 09:24:21] Applied bet limits for 113707: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 09:24:21] Checking for duplicate serial number: a508d0bc-8a80-39d6-a94b-ffbdc1182726
+[2026-02-24 09:24:21] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 09:24:21] Looking up user_id in argame_balances: 113707
+[2026-02-24 09:24:21] ✅ User found! Current balance (PKR): 39.43
+[2026-02-24 09:24:21] Balance change (PKR): -10, New balance (PKR): 29.43
+[2026-02-24 09:24:21] Balance updated successfully
+[2026-02-24 09:24:21] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 09:24:21] Sending success response to SeamlessEndpoints
+[2026-02-24 09:24:21] Response data: {"code":0,"msg":"Success","balance_pkr":29.43}
+[2026-02-24 09:24:21] Sending response: {"code":0,"msg":"Success","balance_pkr":29.43} (Status: 200)
+[2026-02-24 09:24:32] ========================================
+[2026-02-24 09:24:32] === Game Callback Received ===
+[2026-02-24 09:24:32] Request Method: POST
+[2026-02-24 09:24:32] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 09:24:32] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 09:24:32] Raw input: {"user_id":"113707","full_user_id":"h6c77c2c113707","game_code":"664fba4da609ee82b78820b1f570f4ad","bet_amount":10,"win_amount":0,"serial_number":"f3f4b8bb-b2cc-397e-86f1-83a9902fda63","game_round":"501358634665850256","vendor_code":"664fba4da609ee82b78820b1f570f4ad","timestamp":"2026-02-24 01:24:31","currency_code":"PKR"}
+[2026-02-24 09:24:32] Parsed input: {
+    "user_id": "113707",
+    "full_user_id": "h6c77c2c113707",
+    "game_code": "664fba4da609ee82b78820b1f570f4ad",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "f3f4b8bb-b2cc-397e-86f1-83a9902fda63",
+    "game_round": "501358634665850256",
+    "vendor_code": "664fba4da609ee82b78820b1f570f4ad",
+    "timestamp": "2026-02-24 01:24:31",
+    "currency_code": "PKR"
+}
+[2026-02-24 09:24:32] Direct match found for user_id: 113707
+[2026-02-24 09:24:32] User ID: 113707
+[2026-02-24 09:24:32] Game: 664fba4da609ee82b78820b1f570f4ad, Round: 501358634665850256
+[2026-02-24 09:24:32] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 09:24:32] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 09:24:32] Applied bet limits for 113707: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 09:24:32] Checking for duplicate serial number: f3f4b8bb-b2cc-397e-86f1-83a9902fda63
+[2026-02-24 09:24:32] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 09:24:32] Looking up user_id in argame_balances: 113707
+[2026-02-24 09:24:32] ✅ User found! Current balance (PKR): 29.43
+[2026-02-24 09:24:32] Balance change (PKR): -10, New balance (PKR): 19.43
+[2026-02-24 09:24:32] Balance updated successfully
+[2026-02-24 09:24:32] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 09:24:32] Sending success response to SeamlessEndpoints
+[2026-02-24 09:24:32] Response data: {"code":0,"msg":"Success","balance_pkr":19.43}
+[2026-02-24 09:24:32] Sending response: {"code":0,"msg":"Success","balance_pkr":19.43} (Status: 200)
+[2026-02-24 09:25:08] ========================================
+[2026-02-24 09:25:08] === Game Callback Received ===
+[2026-02-24 09:25:08] Request Method: POST
+[2026-02-24 09:25:08] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 09:25:08] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 09:25:08] Raw input: {"user_id":"113707","full_user_id":"h6c77c2c113707","game_code":"664fba4da609ee82b78820b1f570f4ad","bet_amount":10,"win_amount":0,"serial_number":"94421ff0-3115-36d5-9bbf-6e8aa9ba5bbc","game_round":"9498678302726568651","vendor_code":"664fba4da609ee82b78820b1f570f4ad","timestamp":"2026-02-24 01:25:07","currency_code":"PKR"}
+[2026-02-24 09:25:08] Parsed input: {
+    "user_id": "113707",
+    "full_user_id": "h6c77c2c113707",
+    "game_code": "664fba4da609ee82b78820b1f570f4ad",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "94421ff0-3115-36d5-9bbf-6e8aa9ba5bbc",
+    "game_round": "9498678302726568651",
+    "vendor_code": "664fba4da609ee82b78820b1f570f4ad",
+    "timestamp": "2026-02-24 01:25:07",
+    "currency_code": "PKR"
+}
+[2026-02-24 09:25:08] Direct match found for user_id: 113707
+[2026-02-24 09:25:08] User ID: 113707
+[2026-02-24 09:25:08] Game: 664fba4da609ee82b78820b1f570f4ad, Round: 9498678302726568651
+[2026-02-24 09:25:08] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 09:25:08] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 09:25:08] Applied bet limits for 113707: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 09:25:08] Checking for duplicate serial number: 94421ff0-3115-36d5-9bbf-6e8aa9ba5bbc
+[2026-02-24 09:25:08] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 09:25:08] Looking up user_id in argame_balances: 113707
+[2026-02-24 09:25:08] ✅ User found! Current balance (PKR): 19.43
+[2026-02-24 09:25:08] Balance change (PKR): -10, New balance (PKR): 9.43
+[2026-02-24 09:25:08] Balance updated successfully
+[2026-02-24 09:25:08] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 09:25:08] Sending success response to SeamlessEndpoints
+[2026-02-24 09:25:08] Response data: {"code":0,"msg":"Success","balance_pkr":9.43}
+[2026-02-24 09:25:08] Sending response: {"code":0,"msg":"Success","balance_pkr":9.43} (Status: 200)
+[2026-02-24 12:17:34] ========================================
+[2026-02-24 12:17:34] === Game Callback Received ===
+[2026-02-24 12:17:34] Request Method: POST
+[2026-02-24 12:17:34] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:17:34] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:17:34] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"225b5f8e-1039-384b-98cc-d2728147550e","game_round":"8166124474383941587","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:17:32","currency_code":"PKR"}
+[2026-02-24 12:17:34] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "225b5f8e-1039-384b-98cc-d2728147550e",
+    "game_round": "8166124474383941587",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:17:32",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:17:34] Direct match found for user_id: 1174023
+[2026-02-24 12:17:34] User ID: 1174023
+[2026-02-24 12:17:34] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 8166124474383941587
+[2026-02-24 12:17:34] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:17:34] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:17:34] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:17:34] Checking for duplicate serial number: 225b5f8e-1039-384b-98cc-d2728147550e
+[2026-02-24 12:17:34] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:17:34] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:17:34] ✅ User found! Current balance (PKR): 406
+[2026-02-24 12:17:34] Balance change (PKR): -10, New balance (PKR): 396
+[2026-02-24 12:17:34] Balance updated successfully
+[2026-02-24 12:17:34] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:17:34] Sending success response to SeamlessEndpoints
+[2026-02-24 12:17:34] Response data: {"code":0,"msg":"Success","balance_pkr":396}
+[2026-02-24 12:17:34] Sending response: {"code":0,"msg":"Success","balance_pkr":396} (Status: 200)
+[2026-02-24 12:17:37] ========================================
+[2026-02-24 12:17:37] === Game Callback Received ===
+[2026-02-24 12:17:37] Request Method: POST
+[2026-02-24 12:17:37] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:17:37] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:17:37] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"fdbe5d4a-084d-3bdf-b397-f733364a6e3b","game_round":"8690657548019184437","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:17:36","currency_code":"PKR"}
+[2026-02-24 12:17:37] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "fdbe5d4a-084d-3bdf-b397-f733364a6e3b",
+    "game_round": "8690657548019184437",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:17:36",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:17:37] Direct match found for user_id: 1174023
+[2026-02-24 12:17:37] User ID: 1174023
+[2026-02-24 12:17:37] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 8690657548019184437
+[2026-02-24 12:17:37] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:17:37] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:17:37] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:17:37] Checking for duplicate serial number: fdbe5d4a-084d-3bdf-b397-f733364a6e3b
+[2026-02-24 12:17:37] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:17:37] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:17:37] ✅ User found! Current balance (PKR): 396
+[2026-02-24 12:17:37] Balance change (PKR): -10, New balance (PKR): 386
+[2026-02-24 12:17:37] Balance updated successfully
+[2026-02-24 12:17:37] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:17:37] Sending success response to SeamlessEndpoints
+[2026-02-24 12:17:37] Response data: {"code":0,"msg":"Success","balance_pkr":386}
+[2026-02-24 12:17:37] Sending response: {"code":0,"msg":"Success","balance_pkr":386} (Status: 200)
+[2026-02-24 12:17:41] ========================================
+[2026-02-24 12:17:41] === Game Callback Received ===
+[2026-02-24 12:17:41] Request Method: POST
+[2026-02-24 12:17:41] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:17:41] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:17:41] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"a86ed527-1694-32a4-9ef0-ed8756682c17","game_round":"18024069348359093365","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:17:40","currency_code":"PKR"}
+[2026-02-24 12:17:41] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "a86ed527-1694-32a4-9ef0-ed8756682c17",
+    "game_round": "18024069348359093365",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:17:40",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:17:41] Direct match found for user_id: 1174023
+[2026-02-24 12:17:41] User ID: 1174023
+[2026-02-24 12:17:41] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 18024069348359093365
+[2026-02-24 12:17:41] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:17:41] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:17:41] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:17:41] Checking for duplicate serial number: a86ed527-1694-32a4-9ef0-ed8756682c17
+[2026-02-24 12:17:41] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:17:41] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:17:41] ✅ User found! Current balance (PKR): 386
+[2026-02-24 12:17:41] Balance change (PKR): -10, New balance (PKR): 376
+[2026-02-24 12:17:41] Balance updated successfully
+[2026-02-24 12:17:41] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:17:41] Sending success response to SeamlessEndpoints
+[2026-02-24 12:17:41] Response data: {"code":0,"msg":"Success","balance_pkr":376}
+[2026-02-24 12:17:41] Sending response: {"code":0,"msg":"Success","balance_pkr":376} (Status: 200)
+[2026-02-24 12:17:44] ========================================
+[2026-02-24 12:17:44] === Game Callback Received ===
+[2026-02-24 12:17:44] Request Method: POST
+[2026-02-24 12:17:44] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:17:44] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:17:44] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"2a7ea157-b8bf-3fc7-8f13-2c513697ea9c","game_round":"742024052930002055","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:17:43","currency_code":"PKR"}
+[2026-02-24 12:17:44] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "2a7ea157-b8bf-3fc7-8f13-2c513697ea9c",
+    "game_round": "742024052930002055",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:17:43",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:17:44] Direct match found for user_id: 1174023
+[2026-02-24 12:17:44] User ID: 1174023
+[2026-02-24 12:17:44] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 742024052930002055
+[2026-02-24 12:17:44] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:17:44] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:17:44] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:17:44] Checking for duplicate serial number: 2a7ea157-b8bf-3fc7-8f13-2c513697ea9c
+[2026-02-24 12:17:44] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:17:44] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:17:44] ✅ User found! Current balance (PKR): 376
+[2026-02-24 12:17:44] Balance change (PKR): -10, New balance (PKR): 366
+[2026-02-24 12:17:45] Balance updated successfully
+[2026-02-24 12:17:45] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:17:45] Sending success response to SeamlessEndpoints
+[2026-02-24 12:17:45] Response data: {"code":0,"msg":"Success","balance_pkr":366}
+[2026-02-24 12:17:45] Sending response: {"code":0,"msg":"Success","balance_pkr":366} (Status: 200)
+[2026-02-24 12:17:48] ========================================
+[2026-02-24 12:17:48] === Game Callback Received ===
+[2026-02-24 12:17:48] Request Method: POST
+[2026-02-24 12:17:48] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:17:48] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:17:48] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"c1446bb1-0c36-3b7e-b559-28a59f29750e","game_round":"3418320719603053201","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:17:47","currency_code":"PKR"}
+[2026-02-24 12:17:48] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "c1446bb1-0c36-3b7e-b559-28a59f29750e",
+    "game_round": "3418320719603053201",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:17:47",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:17:48] Direct match found for user_id: 1174023
+[2026-02-24 12:17:48] User ID: 1174023
+[2026-02-24 12:17:48] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 3418320719603053201
+[2026-02-24 12:17:48] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:17:48] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:17:48] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:17:48] Checking for duplicate serial number: c1446bb1-0c36-3b7e-b559-28a59f29750e
+[2026-02-24 12:17:48] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:17:48] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:17:48] ✅ User found! Current balance (PKR): 366
+[2026-02-24 12:17:48] Balance change (PKR): -10, New balance (PKR): 356
+[2026-02-24 12:17:48] Balance updated successfully
+[2026-02-24 12:17:48] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:17:48] Sending success response to SeamlessEndpoints
+[2026-02-24 12:17:48] Response data: {"code":0,"msg":"Success","balance_pkr":356}
+[2026-02-24 12:17:48] Sending response: {"code":0,"msg":"Success","balance_pkr":356} (Status: 200)
+[2026-02-24 12:17:51] ========================================
+[2026-02-24 12:17:51] === Game Callback Received ===
+[2026-02-24 12:17:51] Request Method: POST
+[2026-02-24 12:17:51] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:17:51] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:17:51] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"002a200d-6498-3b74-9df1-93b1917530d9","game_round":"14319013925236453929","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:17:50","currency_code":"PKR"}
+[2026-02-24 12:17:51] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "002a200d-6498-3b74-9df1-93b1917530d9",
+    "game_round": "14319013925236453929",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:17:50",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:17:51] Direct match found for user_id: 1174023
+[2026-02-24 12:17:51] User ID: 1174023
+[2026-02-24 12:17:51] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 14319013925236453929
+[2026-02-24 12:17:51] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:17:51] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:17:51] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:17:51] Checking for duplicate serial number: 002a200d-6498-3b74-9df1-93b1917530d9
+[2026-02-24 12:17:51] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:17:51] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:17:51] ✅ User found! Current balance (PKR): 356
+[2026-02-24 12:17:51] Balance change (PKR): -10, New balance (PKR): 346
+[2026-02-24 12:17:51] Balance updated successfully
+[2026-02-24 12:17:51] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:17:51] Sending success response to SeamlessEndpoints
+[2026-02-24 12:17:51] Response data: {"code":0,"msg":"Success","balance_pkr":346}
+[2026-02-24 12:17:51] Sending response: {"code":0,"msg":"Success","balance_pkr":346} (Status: 200)
+[2026-02-24 12:17:55] ========================================
+[2026-02-24 12:17:55] === Game Callback Received ===
+[2026-02-24 12:17:55] Request Method: POST
+[2026-02-24 12:17:55] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:17:55] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:17:55] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"2f43f39e-45fa-313c-b9c5-ffccad61ca30","game_round":"13619257774333442794","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:17:54","currency_code":"PKR"}
+[2026-02-24 12:17:55] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "2f43f39e-45fa-313c-b9c5-ffccad61ca30",
+    "game_round": "13619257774333442794",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:17:54",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:17:55] Direct match found for user_id: 1174023
+[2026-02-24 12:17:55] User ID: 1174023
+[2026-02-24 12:17:55] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 13619257774333442794
+[2026-02-24 12:17:55] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:17:55] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:17:55] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:17:55] Checking for duplicate serial number: 2f43f39e-45fa-313c-b9c5-ffccad61ca30
+[2026-02-24 12:17:55] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:17:55] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:17:55] ✅ User found! Current balance (PKR): 346
+[2026-02-24 12:17:55] Balance change (PKR): -10, New balance (PKR): 336
+[2026-02-24 12:17:55] Balance updated successfully
+[2026-02-24 12:17:55] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:17:55] Sending success response to SeamlessEndpoints
+[2026-02-24 12:17:55] Response data: {"code":0,"msg":"Success","balance_pkr":336}
+[2026-02-24 12:17:55] Sending response: {"code":0,"msg":"Success","balance_pkr":336} (Status: 200)
+[2026-02-24 12:17:59] ========================================
+[2026-02-24 12:17:59] === Game Callback Received ===
+[2026-02-24 12:17:59] Request Method: POST
+[2026-02-24 12:17:59] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:17:59] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:17:59] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"b855691d-4bbf-3c9e-8ed2-f4050dee9431","game_round":"3992119675997011107","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:17:58","currency_code":"PKR"}
+[2026-02-24 12:17:59] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "b855691d-4bbf-3c9e-8ed2-f4050dee9431",
+    "game_round": "3992119675997011107",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:17:58",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:17:59] Direct match found for user_id: 1174023
+[2026-02-24 12:17:59] User ID: 1174023
+[2026-02-24 12:17:59] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 3992119675997011107
+[2026-02-24 12:17:59] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:17:59] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:17:59] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:17:59] Checking for duplicate serial number: b855691d-4bbf-3c9e-8ed2-f4050dee9431
+[2026-02-24 12:17:59] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:17:59] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:17:59] ✅ User found! Current balance (PKR): 336
+[2026-02-24 12:17:59] Balance change (PKR): -10, New balance (PKR): 326
+[2026-02-24 12:17:59] Balance updated successfully
+[2026-02-24 12:17:59] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:17:59] Sending success response to SeamlessEndpoints
+[2026-02-24 12:17:59] Response data: {"code":0,"msg":"Success","balance_pkr":326}
+[2026-02-24 12:17:59] Sending response: {"code":0,"msg":"Success","balance_pkr":326} (Status: 200)
+[2026-02-24 12:18:02] ========================================
+[2026-02-24 12:18:02] === Game Callback Received ===
+[2026-02-24 12:18:02] Request Method: POST
+[2026-02-24 12:18:02] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:18:02] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:18:02] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"273cd85a-4667-30be-96a8-9fd731eac399","game_round":"11717680728591644694","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:18:01","currency_code":"PKR"}
+[2026-02-24 12:18:02] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "273cd85a-4667-30be-96a8-9fd731eac399",
+    "game_round": "11717680728591644694",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:18:01",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:18:02] Direct match found for user_id: 1174023
+[2026-02-24 12:18:02] User ID: 1174023
+[2026-02-24 12:18:02] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 11717680728591644694
+[2026-02-24 12:18:02] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:18:02] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:18:02] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:18:02] Checking for duplicate serial number: 273cd85a-4667-30be-96a8-9fd731eac399
+[2026-02-24 12:18:02] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:18:02] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:18:02] ✅ User found! Current balance (PKR): 326
+[2026-02-24 12:18:02] Balance change (PKR): -10, New balance (PKR): 316
+[2026-02-24 12:18:02] Balance updated successfully
+[2026-02-24 12:18:02] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:18:02] Sending success response to SeamlessEndpoints
+[2026-02-24 12:18:02] Response data: {"code":0,"msg":"Success","balance_pkr":316}
+[2026-02-24 12:18:02] Sending response: {"code":0,"msg":"Success","balance_pkr":316} (Status: 200)
+[2026-02-24 12:18:05] ========================================
+[2026-02-24 12:18:05] === Game Callback Received ===
+[2026-02-24 12:18:05] Request Method: POST
+[2026-02-24 12:18:05] Request URI: /evenvessiss/api/webapi/call.php
+[2026-02-24 12:18:05] ✅ Database connected (DB: pkrgame, User: pkrgame)
+[2026-02-24 12:18:05] Raw input: {"user_id":"1174023","full_user_id":"h6c77c2c1174023","game_code":"fd369a4a7486ff303beea267ec5c8eff","bet_amount":10,"win_amount":0,"serial_number":"8df19c0c-e40a-31c7-93ea-77655cfec74e","game_round":"2811211353852688221","vendor_code":"fd369a4a7486ff303beea267ec5c8eff","timestamp":"2026-02-24 04:18:04","currency_code":"PKR"}
+[2026-02-24 12:18:05] Parsed input: {
+    "user_id": "1174023",
+    "full_user_id": "h6c77c2c1174023",
+    "game_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "bet_amount": 10,
+    "win_amount": 0,
+    "serial_number": "8df19c0c-e40a-31c7-93ea-77655cfec74e",
+    "game_round": "2811211353852688221",
+    "vendor_code": "fd369a4a7486ff303beea267ec5c8eff",
+    "timestamp": "2026-02-24 04:18:04",
+    "currency_code": "PKR"
+}
+[2026-02-24 12:18:05] Direct match found for user_id: 1174023
+[2026-02-24 12:18:05] User ID: 1174023
+[2026-02-24 12:18:05] Game: fd369a4a7486ff303beea267ec5c8eff, Round: 2811211353852688221
+[2026-02-24 12:18:05] Currency: PKR (treated as local), Using rate = 1.0
+[2026-02-24 12:18:05] Bet: 10 PKR, Win: 0 PKR
+[2026-02-24 12:18:05] Applied bet limits for 1174023: min=0 PKR, max=no cap PKR (global defaults used where per-user not set)
+[2026-02-24 12:18:05] Checking for duplicate serial number: 8df19c0c-e40a-31c7-93ea-77655cfec74e
+[2026-02-24 12:18:05] ⚠️ game_bet_logs table doesn't exist - skipping duplicate check
+[2026-02-24 12:18:05] Looking up user_id in argame_balances: 1174023
+[2026-02-24 12:18:05] ✅ User found! Current balance (PKR): 316
+[2026-02-24 12:18:05] Balance change (PKR): -10, New balance (PKR): 306
+[2026-02-24 12:18:05] Balance updated successfully
+[2026-02-24 12:18:05] ⚠️ game_bet_logs table doesn't exist - skipping bet logging
+[2026-02-24 12:18:05] Sending success response to SeamlessEndpoints
+[2026-02-24 12:18:05] Response data: {"code":0,"msg":"Success","balance_pkr":306}
+[2026-02-24 12:18:05] Sending response: {"code":0,"msg":"Success","balance_pkr":306} (Status: 200)

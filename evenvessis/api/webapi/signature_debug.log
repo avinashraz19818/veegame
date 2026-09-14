@@ -1,0 +1,62 @@
+
+========== 2026-03-09 01:14:21 ==========
+POST Data: 
+Received signature: 67FF7CC6CAAE690743F3904A952EF939
+All formats: Array
+(
+    [format_1] => Array
+        (
+            [string] => {"language":"0","random":"d2f72d0950824854833edf900156439f","timestamp":"1772999060"}
+            [md5] => 05960C507D3885A4F0E90445DBE35FEA
+        )
+
+    [format_2] => Array
+        (
+            [string] => {"language":0,"random":"d2f72d0950824854833edf900156439f","timestamp":"1772999060"}
+            [md5] => 4032BCAE8901C85308F9FD9EC6F9E8FB
+        )
+
+    [format_3] => Array
+        (
+            [string] => {"language":"0","random":"d2f72d0950824854833edf900156439f"}
+            [md5] => 62757176348CAF338844B8AA9BED36B7
+        )
+
+    [format_4] => Array
+        (
+            [string] => {"language":0,"random":"d2f72d0950824854833edf900156439f"}
+            [md5] => 78D59B1A98187F130697C013E68CD322
+        )
+
+    [format_5] => Array
+        (
+            [string] => {"language":"0","random":"d2f72d0950824854833edf900156439f"}
+            [md5] => 62757176348CAF338844B8AA9BED36B7
+        )
+
+    [format_6] => Array
+        (
+            [string] => {"random":"d2f72d0950824854833edf900156439f","language":"0"}
+            [md5] => 8123F73106FCA0548EC2688532191A77
+        )
+
+    [format_7] => Array
+        (
+            [string] => {"language": "0", "random": "d2f72d0950824854833edf900156439f"}
+            [md5] => 9B715BDC4AD3854D537B8FED9592A43D
+        )
+
+    [format_8] => Array
+        (
+            [string] => {"language":"0","random":"d2f72d0950824854833edf900156439f"}
+            [md5] => 62757176348CAF338844B8AA9BED36B7
+        )
+
+    [format_9] => Array
+        (
+            [string] => {"codeType":-1,"language":0,"random":"d2f72d0950824854833edf900156439f","signature":"67FF7CC6CAAE690743F3904A952EF939","timestamp":1772999060}
+            [md5] => 99BA4815253BDC836AE9D1AFBFFAD476
+        )
+
+)
+

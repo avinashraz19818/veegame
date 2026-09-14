@@ -1,0 +1,99 @@
+
+========== 2026-03-09 01:31:14 ==========
+POST DATA: {"codeType":-1,"language":0,"random":"02c9908432de4a69bca739b9f2a5951b","signature":"666BB6C7037D13AFDD2AB005A698CF7C","timestamp":1773000074}
+Processing signature: 666BB6C7037D13AFDD2AB005A698CF7C
+Params: codeType=-1, language=0, pageNo=1, pageSize=10, random=02c9908432de4a69bca739b9f2a5951b, timestamp=1773000074
+All attempts: Array
+(
+    [attempt_1] => Array
+        (
+            [format] => {"codeType":-1,"language":0,"pageNo":1,"pageSize":10,"random":"02c9908432de4a69bca739b9f2a5951b","timestamp":1773000074}
+            [md5_upper] => 2F6835586D2E0D75B44AAB8E0907AAB8
+            [md5_lower] => 2f6835586d2e0d75b44aab8e0907aab8
+            [sha256_upper] => EC819D0D9C0B1AB138381CA724ABA9EF31E13E85B8DA021EC48DEB2EFCB7C3C4
+            [sha256_lower] => ec819d0d9c0b1ab138381ca724aba9ef31e13e85b8da021ec48deb2efcb7c3c4
+        )
+
+    [attempt_2] => Array
+        (
+            [format] => {"codeType":-1,"language":0,"random":"02c9908432de4a69bca739b9f2a5951b","timestamp":1773000074}
+            [md5_upper] => 492FB36D9F41B50225FBFB56079E5906
+            [md5_lower] => 492fb36d9f41b50225fbfb56079e5906
+            [sha256_upper] => 1AF3C925CB3A46F24F177488E0523D604FA798E54176FFB4EDEA4EAA910D2276
+            [sha256_lower] => 1af3c925cb3a46f24f177488e0523d604fa798e54176ffb4edea4eaa910d2276
+        )
+
+    [attempt_3] => Array
+        (
+            [format] => {"codeType":-1,"language":0,"pageNo":1,"pageSize":10,"random":"02c9908432de4a69bca739b9f2a5951b","timestamp":1773000074}
+            [md5_upper] => 2F6835586D2E0D75B44AAB8E0907AAB8
+            [md5_lower] => 2f6835586d2e0d75b44aab8e0907aab8
+            [sha256_upper] => EC819D0D9C0B1AB138381CA724ABA9EF31E13E85B8DA021EC48DEB2EFCB7C3C4
+            [sha256_lower] => ec819d0d9c0b1ab138381ca724aba9ef31e13e85b8da021ec48deb2efcb7c3c4
+        )
+
+    [attempt_4] => Array
+        (
+            [format] => {"codeType":"-1","language":"0","pageNo":"1","pageSize":"10","random":"02c9908432de4a69bca739b9f2a5951b","timestamp":"1773000074"}
+            [md5_upper] => A80733EE055B401D6CEA8BC4213C708C
+            [md5_lower] => a80733ee055b401d6cea8bc4213c708c
+            [sha256_upper] => 0FDD20DB5E30264875A2AB8B4658DC5F8348C78B3C1C246FAAE36C00533F4000
+            [sha256_lower] => 0fdd20db5e30264875a2ab8b4658dc5f8348c78b3c1c246faae36c00533f4000
+        )
+
+    [attempt_5] => Array
+        (
+            [format] => %7B%22codeType%22%3A-1%2C%22language%22%3A0%2C%22pageNo%22%3A1%2C%22pageSize%22%3A10%2C%22random%22%3A%2202c9908432de4a69bca739b9f2a5951b%22%2C%22timestamp%22%3A1773000074%7D
+            [md5_upper] => 0ECE1B5D23BF138AF9B332DA8787D026
+            [md5_lower] => 0ece1b5d23bf138af9b332da8787d026
+            [sha256_upper] => 77F092AB809E02B16E5D907A0EF67407A980F55C800072E4739AAE0EE01EF09F
+            [sha256_lower] => 77f092ab809e02b16e5d907a0ef67407a980f55c800072e4739aae0ee01ef09f
+        )
+
+    [attempt_6] => Array
+        (
+            [format] => eyJjb2RlVHlwZSI6LTEsImxhbmd1YWdlIjowLCJwYWdlTm8iOjEsInBhZ2VTaXplIjoxMCwicmFuZG9tIjoiMDJjOTkwODQzMmRlNGE2OWJjYTczOWI5ZjJhNTk1MWIiLCJ0aW1lc3RhbXAiOjE3NzMwMDAwNzR9
+            [md5_upper] => 53E2ECF2E57B3613D34CE007259B21B7
+            [md5_lower] => 53e2ecf2e57b3613d34ce007259b21b7
+            [sha256_upper] => 1F76359E3246B470682C0FC39A808FBB6C6A71208E61FBF3FBCB95D6118FE8D3
+            [sha256_lower] => 1f76359e3246b470682c0fc39a808fbb6c6a71208e61fbf3fbcb95d6118fe8d3
+        )
+
+    [attempt_7] => Array
+        (
+            [format] => codeType=-1&language=0&pageNo=1&pageSize=10&random=02c9908432de4a69bca739b9f2a5951b&timestamp=1773000074
+            [md5_upper] => E94BBB1DB763AFACCBDEF01BEEB31A7D
+            [md5_lower] => e94bbb1db763afaccbdef01beeb31a7d
+            [sha256_upper] => 71F25FBC984D769E541BC934ADCEB264165D2B65FF3EC011225B04D32A1F7306
+            [sha256_lower] => 71f25fbc984d769e541bc934adceb264165d2b65ff3ec011225b04d32a1f7306
+        )
+
+    [attempt_8] => Array
+        (
+            [format] => codeType=-1&language=0&pageNo=1&pageSize=10&random=02c9908432de4a69bca739b9f2a5951b&timestamp=1773000074
+            [md5_upper] => E94BBB1DB763AFACCBDEF01BEEB31A7D
+            [md5_lower] => e94bbb1db763afaccbdef01beeb31a7d
+            [sha256_upper] => 71F25FBC984D769E541BC934ADCEB264165D2B65FF3EC011225B04D32A1F7306
+            [sha256_lower] => 71f25fbc984d769e541bc934adceb264165d2b65ff3ec011225b04d32a1f7306
+        )
+
+    [attempt_9] => Array
+        (
+            [format] => codeType=-1&language=0&pageNo=1&pageSize=10&random=02c9908432de4a69bca739b9f2a5951b&timestamp=1773000074
+            [md5_upper] => E94BBB1DB763AFACCBDEF01BEEB31A7D
+            [md5_lower] => e94bbb1db763afaccbdef01beeb31a7d
+            [sha256_upper] => 71F25FBC984D769E541BC934ADCEB264165D2B65FF3EC011225B04D32A1F7306
+            [sha256_lower] => 71f25fbc984d769e541bc934adceb264165d2b65ff3ec011225b04d32a1f7306
+        )
+
+    [attempt_10] => Array
+        (
+            [format] => codeType=-1,language=0,pageNo=1,pageSize=10,random=02c9908432de4a69bca739b9f2a5951b,timestamp=1773000074
+            [md5_upper] => 1FE5FEEDF1D95E42EA0025DD45D9DFAE
+            [md5_lower] => 1fe5feedf1d95e42ea0025dd45d9dfae
+            [sha256_upper] => 86B212E09996EDC95D8632F8B3ACE17DE48CC572B60B241F4F8C01B371010E28
+            [sha256_lower] => 86b212e09996edc95d8632f8b3ace17de48cc572b60b241f4f8c01b371010e28
+        )
+
+)
+

@@ -1,0 +1,3787 @@
+2025-08-19 16:48:09 [req_68a45d71a8b312.08590260] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755602288620,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 16:48:31 [req_68a45d8734b812.02092119] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755602310589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 16:48:52 [req_68a45d9c38e8b5.62417711] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755602331590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 16:49:13 [req_68a45db139a821.57363047] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755602352590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 16:49:34 [req_68a45dc61a54b5.53144390] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755602373589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 16:49:43 [req_68a45dcf438cb8.51964193] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755602382767,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 18:07:19 [req_68a46fffa3bb40.17576572] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755607038573,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 18:07:41 [req_68a4701527c303.39395122] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755607060589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 18:08:02 [req_68a4702a2046c6.59969321] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755607081589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-19 20:56:15 [req_68a49797bf43d6.30746834] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617174785,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-19 20:56:37 [req_68a497ad527223.49751993] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617196590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-19 20:56:49 [req_68a497b93cfeb8.97275168] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919390,
+        "historyId": "5250803598080",
+        "uid": "1212121212",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 11:26:48",
+        "bet": -2.5,
+        "win": 0,
+        "netWin": -2.5,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 11:26:48",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14033,
+        "mb": 2.5,
+        "ts": 1755617208697
+    }
+}
+2025-08-19 20:56:51 [req_68a497bbe11569.88427139] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919391,
+        "historyId": "5250803598086",
+        "uid": "1212121212",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 11:26:51",
+        "bet": -2.5,
+        "win": 17,
+        "netWin": 14.5,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 11:26:51",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 1,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14033,
+        "mb": 2.5,
+        "ts": 1755617211385
+    }
+}
+2025-08-19 20:57:13 [req_68a497d1261271.97610463] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617232589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-19 20:57:34 [req_68a497e6239119.71129864] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617253589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-19 21:03:59 [req_68a4996777c611.90956286] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617638587,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14034
+    }
+}
+2025-08-19 21:04:21 [req_68a4997d1efdb0.51180193] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617660589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14034
+    }
+}
+2025-08-19 21:04:24 [req_68a499807c6e50.75706742] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919506,
+        "historyId": "5250803599351",
+        "uid": "1212121212",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 11:34:23",
+        "bet": -0.01000000000000000020816681711721685132943093776702880859375,
+        "win": 0,
+        "netWin": -0.01000000000000000020816681711721685132943093776702880859375,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 11:34:23",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14034,
+        "mb": 0.01000000000000000020816681711721685132943093776702880859375,
+        "ts": 1755617663993
+    }
+}
+2025-08-19 21:04:28 [req_68a499840df240.05684363] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919507,
+        "historyId": "5250803599361",
+        "uid": "1212121212",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 11:34:27",
+        "bet": -0.01000000000000000020816681711721685132943093776702880859375,
+        "win": 0.8000000000000000444089209850062616169452667236328125,
+        "netWin": 0.79000000000000003552713678800500929355621337890625,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 11:34:27",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14034,
+        "mb": 0.01000000000000000020816681711721685132943093776702880859375,
+        "ts": 1755617667534
+    }
+}
+2025-08-19 21:04:49 [req_68a499991e2110.24812919] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617688589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14034
+    }
+}
+2025-08-19 21:04:56 [req_68a499a0573ad6.98440395] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919517,
+        "historyId": "5250803599449",
+        "uid": "1212121212",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 11:34:55",
+        "bet": -0.01000000000000000020816681711721685132943093776702880859375,
+        "win": 0,
+        "netWin": -0.01000000000000000020816681711721685132943093776702880859375,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 11:34:55",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14034,
+        "mb": 0.01000000000000000020816681711721685132943093776702880859375,
+        "ts": 1755617695837
+    }
+}
+2025-08-19 21:05:00 [req_68a499a4127216.86384695] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919518,
+        "historyId": "5250803599460",
+        "uid": "1212121212",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 11:34:59",
+        "bet": -0.01000000000000000020816681711721685132943093776702880859375,
+        "win": 0,
+        "netWin": -0.01000000000000000020816681711721685132943093776702880859375,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 11:34:59",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14034,
+        "mb": 0.01000000000000000020816681711721685132943093776702880859375,
+        "ts": 1755617699532
+    }
+}
+2025-08-19 21:05:03 [req_68a499a7e312c6.92020203] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919521,
+        "historyId": "5250803599475",
+        "uid": "1212121212",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 11:35:03",
+        "bet": -0.01000000000000000020816681711721685132943093776702880859375,
+        "win": 0,
+        "netWin": -0.01000000000000000020816681711721685132943093776702880859375,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 11:35:03",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14034,
+        "mb": 0.01000000000000000020816681711721685132943093776702880859375,
+        "ts": 1755617703271
+    }
+}
+2025-08-19 21:05:25 [req_68a499bd1d64c7.76939771] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617724589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14034
+    }
+}
+2025-08-19 21:05:46 [req_68a499d22013e0.86624676] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617745589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14034
+    }
+}
+2025-08-19 21:06:07 [req_68a499e71a9cb5.21963181] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617766589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14034
+    }
+}
+2025-08-19 21:09:41 [req_68a49abdb0d212.52289499] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755617980882,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14065
+    }
+}
+2025-08-19 21:10:03 [req_68a49ad3360849.42068914] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755618002589,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14065
+    }
+}
+2025-08-19 21:30:42 [req_68a49faa3515e9.57985125] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755619241152,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14079
+    }
+}
+2025-08-19 21:31:03 [req_68a49fbf3e3cb7.73121280] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755619262590,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14079
+    }
+}
+2025-08-19 21:38:54 [req_68a4a196e49327.55060077] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755619733952,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14077
+    }
+}
+2025-08-19 21:39:05 [req_68a4a1a1cad578.00970386] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919808,
+        "historyId": "5250803608021",
+        "uid": "7060054688",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 12:09:05",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 12:09:05",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14077,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755619745289
+    }
+}
+2025-08-19 21:39:24 [req_68a4a1b486f575.77597318] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919809,
+        "historyId": "5250803608077",
+        "uid": "7060054688",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 12:09:24",
+        "bet": -2,
+        "win": 0,
+        "netWin": -2,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 12:09:24",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14077,
+        "mb": 2,
+        "ts": 1755619764026
+    }
+}
+2025-08-19 21:39:44 [req_68a4a1c8e6f5f2.63666556] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919811,
+        "historyId": "5250803608138",
+        "uid": "7060054688",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 12:09:44",
+        "bet": -2,
+        "win": 0,
+        "netWin": -2,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 12:09:44",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14077,
+        "mb": 2,
+        "ts": 1755619784378
+    }
+}
+2025-08-19 21:39:57 [req_68a4a1d5a7a6d4.76142247] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919812,
+        "historyId": "5250803608167",
+        "uid": "7060054688",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 12:09:57",
+        "bet": -2,
+        "win": 4,
+        "netWin": 2,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 12:09:57",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14077,
+        "mb": 2,
+        "ts": 1755619797164
+    }
+}
+2025-08-19 21:40:05 [req_68a4a1dd6f48f7.32219743] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15919813,
+        "historyId": "5250803608195",
+        "uid": "7060054688",
+        "reportDate": "19-08-2025",
+        "gameDate": "19-08-2025 12:10:04",
+        "bet": -2,
+        "win": 185.599999999999994315658113919198513031005859375,
+        "netWin": 183.599999999999994315658113919198513031005859375,
+        "currency": "RS",
+        "lastModifyTime": "19-08-2025 12:10:04",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 1,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14077,
+        "mb": 2,
+        "ts": 1755619804820
+    }
+}
+2025-08-19 21:40:27 [req_68a4a1f3536ce1.68140960] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755619826759,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14077
+    }
+}
+2025-08-19 21:40:48 [req_68a4a2081ee6c6.87804662] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755619847589,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14077
+    }
+}
+2025-08-19 21:41:09 [req_68a4a21d1f6df4.50279097] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755619868589,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14077
+    }
+}
+2025-08-19 21:41:30 [req_68a4a232200148.79543179] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755619889589,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14077
+    }
+}
+2025-08-20 18:53:07 [req_68a5cc3b5e0629.44664122] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696185993,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:53:28 [req_68a5cc50488291.14306643] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696207589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:53:30 [req_68a5cc52941cd3.99778056] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953084,
+        "historyId": "5250804506647",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:23:30",
+        "bet": -0.01000000000000000020816681711721685132943093776702880859375,
+        "win": 0,
+        "netWin": -0.01000000000000000020816681711721685132943093776702880859375,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:23:30",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.01000000000000000020816681711721685132943093776702880859375,
+        "ts": 1755696210009
+    }
+}
+2025-08-20 18:53:34 [req_68a5cc564cb482.57813094] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953085,
+        "historyId": "5250804506657",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:23:33",
+        "bet": -0.01000000000000000020816681711721685132943093776702880859375,
+        "win": 0,
+        "netWin": -0.01000000000000000020816681711721685132943093776702880859375,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:23:33",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.01000000000000000020816681711721685132943093776702880859375,
+        "ts": 1755696213716
+    }
+}
+2025-08-20 18:53:39 [req_68a5cc5bbbc978.14569689] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953086,
+        "historyId": "5250804506674",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:23:39",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:23:39",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696219068
+    }
+}
+2025-08-20 18:53:42 [req_68a5cc5e0f7060.54781898] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953087,
+        "historyId": "5250804506686",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:23:41",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:23:41",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696221536
+    }
+}
+2025-08-20 18:53:44 [req_68a5cc6040b4e1.19394245] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953088,
+        "historyId": "5250804506692",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:23:43",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 1.5,
+        "netWin": 1.399999999999999911182158029987476766109466552734375,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:23:43",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696223738
+    }
+}
+2025-08-20 18:54:05 [req_68a5cc7529fdd4.18201270] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696244590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:54:26 [req_68a5cc8a3f53c3.40285934] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696265589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:54:47 [req_68a5cc9f244179.14227961] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696286590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:54:48 [req_68a5cca06299a6.08384986] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953089,
+        "historyId": "5250804506845",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:24:47",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:24:47",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696287884
+    }
+}
+2025-08-20 18:54:50 [req_68a5cca2ea3414.93278342] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953090,
+        "historyId": "5250804506851",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:24:50",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:24:50",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696290403
+    }
+}
+2025-08-20 18:54:54 [req_68a5cca66a40a7.10135044] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953091,
+        "historyId": "5250804506858",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:24:53",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:24:53",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696293929
+    }
+}
+2025-08-20 18:54:56 [req_68a5cca8ec8565.61177662] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953092,
+        "historyId": "5250804506865",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:24:56",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:24:56",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696296422
+    }
+}
+2025-08-20 18:54:59 [req_68a5ccab252586.86831022] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953093,
+        "historyId": "5250804506869",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:24:58",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:24:58",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696298630
+    }
+}
+2025-08-20 18:55:05 [req_68a5ccb19d06f1.58678953] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953094,
+        "historyId": "5250804506886",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:25:05",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:25:05",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14054,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755696305069
+    }
+}
+2025-08-20 18:55:27 [req_68a5ccc7296871.45329236] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696326590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:55:52 [req_68a5cce0adde32.45611102] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696351599,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:56:02 [req_68a5ccea9a58e6.55628845] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696347590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:56:14 [req_68a5ccf61b15c4.05946937] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696373589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:56:35 [req_68a5cd0b191b84.91327745] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696394589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:56:56 [req_68a5cd201a72f0.42695228] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696415589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:57:17 [req_68a5cd3520c400.94393742] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696436590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:57:38 [req_68a5cd4a179bb9.27449697] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696457589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:57:59 [req_68a5cd5f1b9838.38459691] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696478590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:58:20 [req_68a5cd74178147.89982853] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696499590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:58:41 [req_68a5cd891a3022.46764720] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696520590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:59:02 [req_68a5cd9e242662.51930041] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696541589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:59:23 [req_68a5cdb325b252.22845318] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696562590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 18:59:42 [req_68a5cdc62ba7c6.95703168] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696581647,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:00:03 [req_68a5cddbf34713.62581849] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696602589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:00:25 [req_68a5cdf11c1b19.14667985] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696624589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:00:46 [req_68a5ce062293b9.98833325] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696645589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:01:07 [req_68a5ce1b241b28.52717438] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696666590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:01:28 [req_68a5ce30215386.98915683] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696687589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:01:49 [req_68a5ce453f1346.26540678] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696708589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:02:10 [req_68a5ce5a2a79e5.76245441] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696729589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:02:31 [req_68a5ce6f2a7866.00411329] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696750590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:02:52 [req_68a5ce841a0db4.51814930] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696771589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:03:13 [req_68a5ce99203b04.34638073] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696792590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:03:34 [req_68a5ceae192091.60177239] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696813589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:03:55 [req_68a5cec31eb755.49394400] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696834590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:04:16 [req_68a5ced8184833.35973837] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696855590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:04:37 [req_68a5ceed1f9600.99204474] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755696876590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14054
+    }
+}
+2025-08-20 19:11:51 [req_68a5d09fdfce75.40626752] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697310989,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:12:13 [req_68a5d0b5217c44.65563638] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697332589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:12:34 [req_68a5d0ca18e363.87964208] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697353589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:12:55 [req_68a5d0df183cd8.62087576] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697374589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:13:16 [req_68a5d0f4213a65.66283357] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697395592,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:13:37 [req_68a5d109181d12.76521848] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697416590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:13:44 [req_68a5d11042a222.26161913] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15953211,
+        "historyId": "5250804511272",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:43:43",
+        "bet": -0.1000000000000000055511151231257827021181583404541015625,
+        "win": 0,
+        "netWin": -0.1000000000000000055511151231257827021181583404541015625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:43:43",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14033,
+        "mb": 0.1000000000000000055511151231257827021181583404541015625,
+        "ts": 1755697423756
+    }
+}
+2025-08-20 19:14:05 [req_68a5d125258273.28586124] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697444590,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:14:26 [req_68a5d13a19cb75.16288425] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697465589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:14:47 [req_68a5d14f180d97.04830157] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697486589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14033
+    }
+}
+2025-08-20 19:22:26 [req_68a5d31a408202.64033453] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755697945151,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14027
+    }
+}
+2025-08-20 19:22:36 [req_68a5d3248849f9.45869382] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15954461,
+        "historyId": "5250804513631",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:52:36",
+        "bet": -0.0899999999999999966693309261245303787291049957275390625,
+        "win": 0,
+        "netWin": -0.0899999999999999966693309261245303787291049957275390625,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:52:36",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14027,
+        "mb": 0.0899999999999999966693309261245303787291049957275390625,
+        "ts": 1755697956009
+    }
+}
+2025-08-20 19:22:45 [req_68a5d32d3c69c6.42353668] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15954501,
+        "historyId": "5250804513686",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:52:44",
+        "bet": -4.5,
+        "win": 0,
+        "netWin": -4.5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:52:44",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14027,
+        "mb": 4.5,
+        "ts": 1755697964692
+    }
+}
+2025-08-20 19:22:49 [req_68a5d331c3caf0.01518938] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15954522,
+        "historyId": "5250804513714",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:52:49",
+        "bet": -4.5,
+        "win": 0,
+        "netWin": -4.5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:52:49",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14027,
+        "mb": 4.5,
+        "ts": 1755697969168
+    }
+}
+2025-08-20 19:22:52 [req_68a5d334f21f43.16551351] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15954531,
+        "historyId": "5250804513728",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:52:52",
+        "bet": -4.5,
+        "win": 1.5,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:52:52",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14027,
+        "mb": 4.5,
+        "ts": 1755697972454
+    }
+}
+2025-08-20 19:22:58 [req_68a5d33a444ec5.26122807] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15954545,
+        "historyId": "5250804513750",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:52:57",
+        "bet": -4.5,
+        "win": 12.5,
+        "netWin": 8,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:52:57",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14027,
+        "mb": 4.5,
+        "ts": 1755697977683
+    }
+}
+2025-08-20 19:23:06 [req_68a5d342bf38d1.00734599] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15954579,
+        "historyId": "5250804513795",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:53:06",
+        "bet": -4.5,
+        "win": 1.5,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:53:06",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14027,
+        "mb": 4.5,
+        "ts": 1755697986267
+    }
+}
+2025-08-20 19:23:11 [req_68a5d3475c2cd7.84217420] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15954591,
+        "historyId": "5250804513815",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:53:10",
+        "bet": -4.5,
+        "win": 0,
+        "netWin": -4.5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:53:10",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14027,
+        "mb": 4.5,
+        "ts": 1755697990766
+    }
+}
+2025-08-20 19:23:59 [req_68a5d377eba091.56939562] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755698039090,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14006
+    }
+}
+2025-08-20 19:24:28 [req_68a5d394e200c8.71121783] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755698068413,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14045
+    }
+}
+2025-08-20 19:25:11 [req_68a5d3bf714812.83028985] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755698110549,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-20 19:25:26 [req_68a5d3ceedc436.44722511] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755698126463,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14006
+    }
+}
+2025-08-20 19:25:34 [req_68a5d3d60b8476.61044347] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955146,
+        "historyId": "5250804514728",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:55:33",
+        "bet": -5,
+        "win": 1.5,
+        "netWin": -3.5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:55:33",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698133512
+    }
+}
+2025-08-20 19:25:40 [req_68a5d3dcc04a71.49134456] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955169,
+        "historyId": "5250804514764",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:55:40",
+        "bet": -5,
+        "win": 8,
+        "netWin": 3,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:55:40",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698140269
+    }
+}
+2025-08-20 19:25:46 [req_68a5d3e27073a9.25934280] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955193,
+        "historyId": "5250804514800",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:55:45",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:55:45",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698145961
+    }
+}
+2025-08-20 19:25:51 [req_68a5d3e762aad2.88136615] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955222,
+        "historyId": "5250804514837",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:55:50",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:55:50",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698150890
+    }
+}
+2025-08-20 19:26:00 [req_68a5d3f00df802.16026035] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955248,
+        "historyId": "5250804514869",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:55:54",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:55:54",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698154547
+    }
+}
+2025-08-20 19:26:04 [req_68a5d3f4af3ee0.60865017] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755698163807,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14006
+    }
+}
+2025-08-20 19:26:07 [req_68a5d3f7973671.57803584] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955318,
+        "historyId": "5250804514963",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:56:07",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:56:07",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698167083
+    }
+}
+2025-08-20 19:26:19 [req_68a5d4039e6c14.92417985] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955348,
+        "historyId": "5250804515017",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:56:19",
+        "bet": -5,
+        "win": 1,
+        "netWin": -4,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:56:19",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698179108
+    }
+}
+2025-08-20 19:26:24 [req_68a5d408d0e260.57875982] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955371,
+        "historyId": "5250804515053",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:56:24",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:56:24",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698184354
+    }
+}
+2025-08-20 19:26:28 [req_68a5d40c764cf4.65928520] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15955386,
+        "historyId": "5250804515077",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:56:27",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:56:27",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14006,
+        "mb": 5,
+        "ts": 1755698187973
+    }
+}
+2025-08-20 19:29:47 [req_68a5d4d36057c3.59207336] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755698386537,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14045
+    }
+}
+2025-08-20 19:29:55 [req_68a5d4dbb89810.27468072] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956300,
+        "historyId": "5250804516419",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:59:55",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:59:55",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698395239
+    }
+}
+2025-08-20 19:30:00 [req_68a5d4e0180f95.99691148] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956317,
+        "historyId": "5250804516445",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 09:59:59",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 09:59:59",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698399562
+    }
+}
+2025-08-20 19:30:03 [req_68a5d4e353ccf8.67971017] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956335,
+        "historyId": "5250804516466",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:02",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:02",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698402609
+    }
+}
+2025-08-20 19:30:06 [req_68a5d4e6a0c1e3.47619786] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956357,
+        "historyId": "5250804516493",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:06",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:06",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698406052
+    }
+}
+2025-08-20 19:30:12 [req_68a5d4ec4ba5a7.87576437] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956383,
+        "historyId": "5250804516526",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:11",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:11",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698411798
+    }
+}
+2025-08-20 19:30:15 [req_68a5d4ef870c30.94260804] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956398,
+        "historyId": "5250804516548",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:15",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:15",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698415044
+    }
+}
+2025-08-20 19:30:19 [req_68a5d4f30e27d8.53143492] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956419,
+        "historyId": "5250804516576",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:18",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:18",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698418522
+    }
+}
+2025-08-20 19:30:22 [req_68a5d4f62c3077.53211598] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956433,
+        "historyId": "5250804516597",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:21",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:21",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698421664
+    }
+}
+2025-08-20 19:30:25 [req_68a5d4f93387d3.55835824] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956454,
+        "historyId": "5250804516623",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:24",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 1.600000000000000088817841970012523233890533447265625,
+        "netWin": 1.399999999999999911182158029987476766109466552734375,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:24",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698424709
+    }
+}
+2025-08-20 19:30:36 [req_68a5d50451a487.70145773] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956494,
+        "historyId": "5250804516688",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:35",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:35",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698435765
+    }
+}
+2025-08-20 19:30:39 [req_68a5d507677fb1.80644929] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956510,
+        "historyId": "5250804516709",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:38",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:38",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698438909
+    }
+}
+2025-08-20 19:30:42 [req_68a5d50a739bd4.60282619] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15956515,
+        "historyId": "5250804516723",
+        "uid": "1212121212",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:00:41",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:00:41",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755698441969
+    }
+}
+2025-08-20 20:12:16 [req_68a5dec8020794.98072640] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755700934899,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-20 20:13:15 [req_68a5df033695a5.14383391] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755700994367,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-20 20:13:16 [req_68a5df043c3ec4.08706784] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15958361,
+        "historyId": "5250804528148",
+        "uid": "7060054688",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:43:15",
+        "bet": -5,
+        "win": 7,
+        "netWin": 2,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:43:15",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14008,
+        "mb": 5,
+        "ts": 1755700995729
+    }
+}
+2025-08-20 20:13:21 [req_68a5df09bf3ed2.77032060] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15958370,
+        "historyId": "5250804528182",
+        "uid": "7060054688",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:43:21",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:43:21",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14008,
+        "mb": 5,
+        "ts": 1755701001272
+    }
+}
+2025-08-20 20:13:28 [req_68a5df10dd4fe5.18061454] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15958380,
+        "historyId": "5250804528227",
+        "uid": "7060054688",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:43:28",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:43:28",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14008,
+        "mb": 5,
+        "ts": 1755701008191
+    }
+}
+2025-08-20 20:13:42 [req_68a5df1e3675f1.33547616] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15958401,
+        "historyId": "5250804528312",
+        "uid": "7060054688",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:43:41",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:43:41",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14008,
+        "mb": 5,
+        "ts": 1755701021687
+    }
+}
+2025-08-20 20:13:50 [req_68a5df26b0aad0.40350411] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 15958420,
+        "historyId": "5250804528363",
+        "uid": "7060054688",
+        "reportDate": "20-08-2025",
+        "gameDate": "20-08-2025 10:43:50",
+        "bet": -1,
+        "win": 0,
+        "netWin": -1,
+        "currency": "RS",
+        "lastModifyTime": "20-08-2025 10:43:50",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14008,
+        "mb": 1,
+        "ts": 1755701030072
+    }
+}
+2025-08-20 20:14:12 [req_68a5df3c1f8a09.51184583] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755701051589,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-20 21:20:04 [req_68a5eeacc01986.21627513] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755705003663,
+        "uid": "7060054688",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-21 13:59:14 [req_68a6d8da0add99.34218239] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755764952987,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-21 13:59:25 [req_68a6d8e5dce572.30154612] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16003427,
+        "historyId": "5250805095305",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:29:25",
+        "bet": -5,
+        "win": 4,
+        "netWin": -1,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:29:25",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14008,
+        "mb": 5,
+        "ts": 1755764965373
+    }
+}
+2025-08-21 13:59:32 [req_68a6d8ec59d3e8.47728598] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16003442,
+        "historyId": "5250805095330",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:29:31",
+        "bet": -5,
+        "win": 21.5,
+        "netWin": 16.5,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:29:31",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14008,
+        "mb": 5,
+        "ts": 1755764971861
+    }
+}
+2025-08-21 13:59:41 [req_68a6d8f537d5c7.53146414] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16003456,
+        "historyId": "5250805095362",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:29:40",
+        "bet": -5,
+        "win": 0,
+        "netWin": -5,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:29:40",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14008,
+        "mb": 5,
+        "ts": 1755764980677
+    }
+}
+2025-08-21 14:00:02 [req_68a6d90a2094b2.86655561] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755765001589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-21 14:00:23 [req_68a6d91f199571.02107364] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755765022594,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-21 14:00:44 [req_68a6d934179b05.18202111] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755765043589,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14008
+    }
+}
+2025-08-21 14:04:05 [req_68a6d9fd320422.54244100] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755765244349,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14055
+    }
+}
+2025-08-21 14:04:10 [req_68a6da02937586.99436761] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16003983,
+        "historyId": "5250805096716",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:34:10",
+        "bet": -0.299999999999999988897769753748434595763683319091796875,
+        "win": 0,
+        "netWin": -0.299999999999999988897769753748434595763683319091796875,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:34:10",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 0.299999999999999988897769753748434595763683319091796875,
+        "ts": 1755765250099
+    }
+}
+2025-08-21 14:04:19 [req_68a6da0bd5cfc4.55808425] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16003991,
+        "historyId": "5250805096737",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:34:19",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:34:19",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765259321
+    }
+}
+2025-08-21 14:04:25 [req_68a6da110ac797.31753485] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16003999,
+        "historyId": "5250805096753",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:34:24",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:34:24",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765264538
+    }
+}
+2025-08-21 14:04:29 [req_68a6da157105e1.64913150] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004000,
+        "historyId": "5250805096758",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:34:28",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:34:28",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765268954
+    }
+}
+2025-08-21 14:04:33 [req_68a6da19c1e518.54370170] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004001,
+        "historyId": "5250805096764",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:34:33",
+        "bet": -3,
+        "win": 16,
+        "netWin": 13,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:34:33",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765273293
+    }
+}
+2025-08-21 14:04:43 [req_68a6da2316d6a7.30202112] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004009,
+        "historyId": "5250805096789",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:34:42",
+        "bet": -3,
+        "win": 30,
+        "netWin": 27,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:34:42",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765282594
+    }
+}
+2025-08-21 14:04:57 [req_68a6da31eab696.36828581] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004047,
+        "historyId": "5250805096863",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:34:57",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:34:57",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765297397
+    }
+}
+2025-08-21 14:05:02 [req_68a6da36640aa3.43311744] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004072,
+        "historyId": "5250805096906",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:01",
+        "bet": -3,
+        "win": 16,
+        "netWin": 13,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:01",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765301894
+    }
+}
+2025-08-21 14:05:07 [req_68a6da3b5a1990.96068173] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004103,
+        "historyId": "5250805096958",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:06",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:06",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765306866
+    }
+}
+2025-08-21 14:05:11 [req_68a6da3f558fd0.68796002] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004134,
+        "historyId": "5250805097004",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:10",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:10",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765310835
+    }
+}
+2025-08-21 14:05:15 [req_68a6da43002751.74153681] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004148,
+        "historyId": "5250805097031",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:14",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:14",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765314483
+    }
+}
+2025-08-21 14:05:18 [req_68a6da46c78f00.44862350] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004163,
+        "historyId": "5250805097055",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:18",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:18",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765318320
+    }
+}
+2025-08-21 14:05:22 [req_68a6da4addd136.94152338] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004190,
+        "historyId": "5250805097102",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:22",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:22",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765322406
+    }
+}
+2025-08-21 14:05:27 [req_68a6da4f0477c4.66148920] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004214,
+        "historyId": "5250805097144",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:26",
+        "bet": -3,
+        "win": 0.8000000000000000444089209850062616169452667236328125,
+        "netWin": -2.20000000000000017763568394002504646778106689453125,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:26",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765326502
+    }
+}
+2025-08-21 14:05:32 [req_68a6da54bc4437.75112816] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004246,
+        "historyId": "5250805097200",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:32",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:32",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765332203
+    }
+}
+2025-08-21 14:05:37 [req_68a6da5910ca10.03327644] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004247,
+        "historyId": "5250805097216",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:36",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:36",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765336521
+    }
+}
+2025-08-21 14:05:41 [req_68a6da5d2d4fb8.05252287] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004261,
+        "historyId": "5250805097241",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:40",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:40",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765340646
+    }
+}
+2025-08-21 14:05:44 [req_68a6da60e9d348.53457009] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004283,
+        "historyId": "5250805097274",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:44",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:44",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765344440
+    }
+}
+2025-08-21 14:05:49 [req_68a6da65081c60.09245991] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004308,
+        "historyId": "5250805097308",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:48",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:48",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765348510
+    }
+}
+2025-08-21 14:05:52 [req_68a6da68df3331.69719576] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004336,
+        "historyId": "5250805097341",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:52",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:52",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765352406
+    }
+}
+2025-08-21 14:05:57 [req_68a6da6d0e9804.40410628] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004360,
+        "historyId": "5250805097371",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:35:56",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:35:56",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765356460
+    }
+}
+2025-08-21 14:06:04 [req_68a6da74935736.27521029] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004367,
+        "historyId": "5250805097383",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:36:00",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:36:00",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765360528
+    }
+}
+2025-08-21 14:06:10 [req_68a6da7aee0405.02563306] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755765369890,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14055
+    }
+}
+2025-08-21 14:06:17 [req_68a6da817953e0.22229983] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004408,
+        "historyId": "5250805097445",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:36:16",
+        "bet": -3,
+        "win": 0.59999999999999997779553950749686919152736663818359375,
+        "netWin": -2.399999999999999911182158029987476766109466552734375,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:36:16",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765376974
+    }
+}
+2025-08-21 14:06:39 [req_68a6da973133f9.14641441] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755765398689,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14055
+    }
+}
+2025-08-21 14:06:51 [req_68a6daa3b5d169.29783730] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004533,
+        "historyId": "5250805097652",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:36:51",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:36:51",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765411231
+    }
+}
+2025-08-21 14:06:55 [req_68a6daa7be7727.87178890] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004539,
+        "historyId": "5250805097670",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:36:55",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:36:55",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765415265
+    }
+}
+2025-08-21 14:07:17 [req_68a6dabd32a918.02624439] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755765436689,
+        "uid": "1212121212",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14055
+    }
+}
+2025-08-21 14:07:20 [req_68a6dac0e2d2d7.95949028] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004580,
+        "historyId": "5250805097782",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:20",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:20",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765440417
+    }
+}
+2025-08-21 14:07:24 [req_68a6dac4b1f4e1.01545946] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004585,
+        "historyId": "5250805097798",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:24",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:24",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765444214
+    }
+}
+2025-08-21 14:07:28 [req_68a6dac8a666a6.53454172] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004594,
+        "historyId": "5250805097813",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:28",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:28",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765448144
+    }
+}
+2025-08-21 14:07:32 [req_68a6dacc807e40.32661741] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004602,
+        "historyId": "5250805097828",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:31",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:31",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765451950
+    }
+}
+2025-08-21 14:07:36 [req_68a6dad05762c8.46159651] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004606,
+        "historyId": "5250805097843",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:35",
+        "bet": -3,
+        "win": 1,
+        "netWin": -2,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:35",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765455782
+    }
+}
+2025-08-21 14:07:40 [req_68a6dad4b76866.12075903] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004613,
+        "historyId": "5250805097856",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:40",
+        "bet": -3,
+        "win": 1.600000000000000088817841970012523233890533447265625,
+        "netWin": -1.399999999999999911182158029987476766109466552734375,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:40",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765460232
+    }
+}
+2025-08-21 14:07:46 [req_68a6dadab758e0.66309545] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004626,
+        "historyId": "5250805097889",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:46",
+        "bet": -3,
+        "win": 16,
+        "netWin": 13,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:46",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765466237
+    }
+}
+2025-08-21 14:07:54 [req_68a6dae2bebc51.44276590] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004640,
+        "historyId": "5250805097927",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:54",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:54",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765474269
+    }
+}
+2025-08-21 14:07:57 [req_68a6dae54d4c95.89064855] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004643,
+        "historyId": "5250805097938",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:37:56",
+        "bet": -3,
+        "win": 0.8000000000000000444089209850062616169452667236328125,
+        "netWin": -2.20000000000000017763568394002504646778106689453125,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:37:56",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765476820
+    }
+}
+2025-08-21 14:08:03 [req_68a6daeb58e2a0.22970871] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16004649,
+        "historyId": "5250805097971",
+        "uid": "1212121212",
+        "reportDate": "21-08-2025",
+        "gameDate": "21-08-2025 04:38:02",
+        "bet": -3,
+        "win": 0,
+        "netWin": -3,
+        "currency": "RS",
+        "lastModifyTime": "21-08-2025 04:38:02",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14055,
+        "mb": 3,
+        "ts": 1755765482839
+    }
+}
+2025-08-22 21:01:42 [req_68a88d5ec86654.75368034] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755876701797,
+        "uid": "9779822444679",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14045
+    }
+}
+2025-08-22 21:01:58 [req_68a88d6e2b7310.58416741] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069874,
+        "historyId": "5250805684862",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:31:57",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:31:57",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876717571
+    }
+}
+2025-08-22 21:02:02 [req_68a88d72314dd7.31421813] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069876,
+        "historyId": "5250805684868",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:01",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:01",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876721508
+    }
+}
+2025-08-22 21:02:05 [req_68a88d756e61b5.89997494] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069878,
+        "historyId": "5250805684873",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:04",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:04",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876724897
+    }
+}
+2025-08-22 21:02:08 [req_68a88d78a273c5.17275064] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069880,
+        "historyId": "5250805684880",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:08",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:08",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876728113
+    }
+}
+2025-08-22 21:02:11 [req_68a88d7bb0f4c9.78934037] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069882,
+        "historyId": "5250805684884",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:10",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:10",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876730854
+    }
+}
+2025-08-22 21:02:21 [req_68a88d85c144c9.36282831] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069888,
+        "historyId": "5250805684900",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:21",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:21",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876741220
+    }
+}
+2025-08-22 21:02:25 [req_68a88d89158119.83218667] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069891,
+        "historyId": "5250805684907",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:24",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:24",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876744517
+    }
+}
+2025-08-22 21:02:28 [req_68a88d8ca4dd22.69728250] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069894,
+        "historyId": "5250805684913",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:28",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:28",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876748126
+    }
+}
+2025-08-22 21:02:32 [req_68a88d900109a2.56925273] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069895,
+        "historyId": "5250805684917",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:31",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:31",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876751462
+    }
+}
+2025-08-22 21:02:35 [req_68a88d93111241.90391453] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069896,
+        "historyId": "5250805684926",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:34",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:34",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876754546
+    }
+}
+2025-08-22 21:02:38 [req_68a88d9600c1b5.81958902] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069897,
+        "historyId": "5250805684934",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:37",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 1.600000000000000088817841970012523233890533447265625,
+        "netWin": 1.399999999999999911182158029987476766109466552734375,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:37",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876757473
+    }
+}
+2025-08-22 21:02:48 [req_68a88da07e7e53.12772753] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069898,
+        "historyId": "5250805684952",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:47",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:47",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876767995
+    }
+}
+2025-08-22 21:02:51 [req_68a88da399c3f9.36846419] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16069899,
+        "historyId": "5250805684958",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 11:32:51",
+        "bet": -0.200000000000000011102230246251565404236316680908203125,
+        "win": 0,
+        "netWin": -0.200000000000000011102230246251565404236316680908203125,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 11:32:51",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.200000000000000011102230246251565404236316680908203125,
+        "ts": 1755876771099
+    }
+}
+2025-08-22 22:48:02 [req_68a8a64ad8c9f6.38047157] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755883081528,
+        "uid": "9779822444679",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14045
+    }
+}
+2025-08-22 22:48:07 [req_68a8a64f1c8009.59098339] {
+    "decodedRequest": {
+        "action": 8,
+        "transferId": 16070389,
+        "historyId": "5250805700429",
+        "uid": "9779822444679",
+        "reportDate": "22-08-2025",
+        "gameDate": "22-08-2025 13:18:06",
+        "bet": -0.01000000000000000020816681711721685132943093776702880859375,
+        "win": 0,
+        "netWin": -0.01000000000000000020816681711721685132943093776702880859375,
+        "currency": "RS",
+        "lastModifyTime": "22-08-2025 13:18:06",
+        "jackpotWin": 0,
+        "jackpotContribute": 0,
+        "hasFreeGame": 0,
+        "hasGamble": 0,
+        "hasBuyFeature": 0,
+        "denom": 0.01000000000000000020816681711721685132943093776702880859375,
+        "systemTakeWin": 0,
+        "gType": 0,
+        "mType": 14045,
+        "mb": 0.01000000000000000020816681711721685132943093776702880859375,
+        "ts": 1755883086584
+    }
+}
+2025-08-22 22:48:21 [req_68a8a65dc1f258.43404706] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755883101171,
+        "uid": "9779822444679",
+        "currency": "RS",
+        "gType": 999,
+        "mType": 999
+    }
+}
+2025-08-22 22:48:22 [req_68a8a65eaa2e17.54798297] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755883102133,
+        "uid": "9779822444679",
+        "currency": "RS",
+        "gType": 999,
+        "mType": 999
+    }
+}
+2025-08-22 22:48:25 [req_68a8a6614f52f2.37475466] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755883104817,
+        "uid": "9779822444679",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14045
+    }
+}
+2025-08-22 22:48:46 [req_68a8a6763b70d8.58584731] {
+    "decodedRequest": {
+        "action": 6,
+        "ts": 1755883125728,
+        "uid": "9779822444679",
+        "currency": "RS",
+        "gType": 0,
+        "mType": 14045
+    }
+}
+2025-12-19 18:34:53 [req_69454d75c6af11.44875814] {
+    "decodedRequest": null
+}
