@@ -624,6 +624,15 @@ function sl_local_current($gameCode)
     $now = time();
     $dayStart = strtotime(gmdate('Y-m-d', $now) . ' 00:00:00 UTC');
     $start = $dayStart + ((int) floor(($now - $dayStart) / $interval) * $interval);
+    if (sl_game_family($gameCode) === 'WinGo') {
+        // Shreewin parity: the site tracks the result feed one period
+        // behind. The round the on-site timer counts down is the provider's
+        // previous period, so by the time the on-site timer expires its
+        // result has long been published and is guaranteed to be present in
+        // the local cache. That is what makes the history auto-update
+        // exactly when the period ends (no manual refresh).
+        $start -= $interval;
+    }
     $make = function ($roundStart) use ($gameCode, $interval) {
         return array(
             'issueNumber' => sl_issue_number_for_start($gameCode, $roundStart),
@@ -870,6 +879,41 @@ function sl_rebind_wingo_current_periods($gameCode, $payload)
     return $payload;
 }
 
+function sl_lag_wingo_current_periods($gameCode, $payload)
+{
+    // Shreewin parity: present the feed one period behind. The provider's
+    // "previous" round becomes the on-site "current" round — its timer is
+    // shifted forward by exactly one interval while the canonical issue
+    // number is preserved — the provider's "current" becomes "next", and
+    // "previous" is synthesized one interval earlier. A period's result is
+    // therefore only revealed after the on-site timer for that period has
+    // fully expired, matching the behavior of the shreewin feed.
+    if (!is_array($payload) || empty($payload['previous']['startTime']) || empty($payload['current']['startTime'])) {
+        return $payload;
+    }
+    $interval = sl_interval_seconds($gameCode);
+    $shift = $interval * 1000;
+    $prev = $payload['previous'];
+    $cur = $payload['current'];
+    $prevStart = (int) round(((float) $prev['startTime']) / 1000);
+    $payload['previous'] = array(
+        'issueNumber' => sl_issue_number_for_start($gameCode, $prevStart - $interval),
+        'startTime' => $prev['startTime'],
+        'endTime' => $prev['startTime'] + $shift,
+    );
+    $payload['current'] = array(
+        'issueNumber' => $prev['issueNumber'],
+        'startTime' => $prev['startTime'] + $shift,
+        'endTime' => $prev['endTime'] + $shift,
+    );
+    $payload['next'] = array(
+        'issueNumber' => $cur['issueNumber'],
+        'startTime' => $cur['startTime'] + $shift,
+        'endTime' => $cur['endTime'] + $shift,
+    );
+    return $payload;
+}
+
 function sl_rebind_wingo_history_periods($gameCode, $list)
 {
     if (!$list) {
@@ -950,7 +994,11 @@ function sl_provider_current($gameCode)
         $url = sl_external_url($gameCode, false) . (strpos(sl_external_url($gameCode, false), '?') === false ? '?' : '&') . 'ts=' . sl_now_ms();
         $data = sl_fetch_json($url, (int) ($control['api_timeout_seconds'] ?? 5));
         if (is_array($data) && isset($data['current']['issueNumber'], $data['current']['startTime'], $data['current']['endTime'])) {
-            return sl_rebind_wingo_current_periods($gameCode, $data);
+            $data = sl_rebind_wingo_current_periods($gameCode, $data);
+            if (sl_game_family($gameCode) === 'WinGo') {
+                $data = sl_lag_wingo_current_periods($gameCode, $data);
+            }
+            return $data;
         }
         if ($remoteRequired || !app_setting_bool('game_api_fallback_to_random', false)) {
             return null;
@@ -1828,60 +1876,129 @@ function sl_history_page($gameCode, $input = array())
         $currentIssue = sl_wingo_current_issue($gameCode);
         if ($currentIssue !== '') {
             sl_prune_unsettled_future_results($gameCode, $currentIssue);
-            $count = $conn->prepare('SELECT COUNT(*) FROM saas_lottery_results WHERE game_code=? AND issue_number<?');
-            if (!$count) {
-                throw new RuntimeException('Unable to prepare lottery history count');
+        }
+
+        $readData = function () use ($conn, $gameCode, $pageNo, $pageSize) {
+            // Recomputed per read so a wait that straddles the boundary flip
+            // automatically widens the visible window to the new current.
+            $currentIssue = sl_wingo_current_issue($gameCode);
+            if ($currentIssue !== '') {
+                $count = $conn->prepare('SELECT COUNT(*) FROM saas_lottery_results WHERE game_code=? AND issue_number<?');
+                if (!$count) {
+                    throw new RuntimeException('Unable to prepare lottery history count');
+                }
+                $count->bind_param('ss', $gameCode, $currentIssue);
+            } else {
+                $count = $conn->prepare('SELECT COUNT(*) FROM saas_lottery_results WHERE game_code=?');
+                if (!$count) {
+                    throw new RuntimeException('Unable to prepare lottery history count');
+                }
+                $count->bind_param('s', $gameCode);
             }
-            $count->bind_param('ss', $gameCode, $currentIssue);
-        } else {
-            $count = $conn->prepare('SELECT COUNT(*) FROM saas_lottery_results WHERE game_code=?');
-            if (!$count) {
-                throw new RuntimeException('Unable to prepare lottery history count');
+            if (!$count->execute()) {
+                throw new RuntimeException('Unable to count lottery history');
             }
-            $count->bind_param('s', $gameCode);
-        }
-        if (!$count->execute()) {
-            throw new RuntimeException('Unable to count lottery history');
-        }
-        $total = 0;
-        $count->bind_result($total);
-        $count->fetch();
-        $count->close();
-        $offset = ($pageNo - 1) * $pageSize;
-        if ($currentIssue !== '') {
-            $stmt = $conn->prepare('SELECT issue_number,premium,number,color,result_sum FROM saas_lottery_results WHERE game_code=? AND issue_number<? ORDER BY issue_number DESC LIMIT ? OFFSET ?');
-            if (!$stmt) {
-                throw new RuntimeException('Unable to prepare lottery history read');
+            $total = 0;
+            $count->bind_result($total);
+            $count->fetch();
+            $count->close();
+            $offset = ($pageNo - 1) * $pageSize;
+            if ($currentIssue !== '') {
+                $stmt = $conn->prepare('SELECT issue_number,premium,number,color,result_sum FROM saas_lottery_results WHERE game_code=? AND issue_number<? ORDER BY issue_number DESC LIMIT ? OFFSET ?');
+                if (!$stmt) {
+                    throw new RuntimeException('Unable to prepare lottery history read');
+                }
+                $stmt->bind_param('ssii', $gameCode, $currentIssue, $pageSize, $offset);
+            } else {
+                $stmt = $conn->prepare('SELECT issue_number,premium,number,color,result_sum FROM saas_lottery_results WHERE game_code=? ORDER BY issue_number DESC LIMIT ? OFFSET ?');
+                if (!$stmt) {
+                    throw new RuntimeException('Unable to prepare lottery history read');
+                }
+                $stmt->bind_param('sii', $gameCode, $pageSize, $offset);
             }
-            $stmt->bind_param('ssii', $gameCode, $currentIssue, $pageSize, $offset);
-        } else {
-            $stmt = $conn->prepare('SELECT issue_number,premium,number,color,result_sum FROM saas_lottery_results WHERE game_code=? ORDER BY issue_number DESC LIMIT ? OFFSET ?');
-            if (!$stmt) {
-                throw new RuntimeException('Unable to prepare lottery history read');
+            if (!$stmt->execute()) {
+                throw new RuntimeException('Unable to read lottery history');
             }
-            $stmt->bind_param('sii', $gameCode, $pageSize, $offset);
-        }
-        if (!$stmt->execute()) {
-            throw new RuntimeException('Unable to read lottery history');
-        }
-        $result = $stmt->get_result();
-        $list = array();
-        while ($result && ($row = $result->fetch_assoc())) {
-            $item = array('issueNumber'=>(string)$row['issue_number'],'number'=>(string)$row['number'],'color'=>(string)$row['color'],'premium'=>(string)$row['premium'],'sum'=>(int)$row['result_sum']);
-            $list[] = sl_game_family($gameCode) === 'TrxWinGo' ? sl_normalize_result_item($gameCode, $item) : $item;
-        }
-        $stmt->close();
-        $list = sl_rebind_wingo_history_periods($gameCode, $list);
-        $data = array('list'=>$list,'pageNo'=>$pageNo,'totalPage'=>$total ? (int)ceil($total/$pageSize) : 0,'totalCount'=>(int)$total);
-        if (sl_game_family($gameCode) === 'MotoRace') {
-            $data['statistics'] = sl_moto_statistics($list);
-        }
+            $result = $stmt->get_result();
+            $list = array();
+            while ($result && ($row = $result->fetch_assoc())) {
+                $item = array('issueNumber'=>(string)$row['issue_number'],'number'=>(string)$row['number'],'color'=>(string)$row['color'],'premium'=>(string)$row['premium'],'sum'=>(int)$row['result_sum']);
+                $list[] = sl_game_family($gameCode) === 'TrxWinGo' ? sl_normalize_result_item($gameCode, $item) : $item;
+            }
+            $stmt->close();
+            $list = sl_rebind_wingo_history_periods($gameCode, $list);
+            $data = array('list'=>$list,'pageNo'=>$pageNo,'totalPage'=>$total ? (int)ceil($total/$pageSize) : 0,'totalCount'=>(int)$total);
+            if (sl_game_family($gameCode) === 'MotoRace') {
+                $data['statistics'] = sl_moto_statistics($list);
+            }
+            return $data;
+        };
+
+        $data = $readData();
+        $data = sl_wingo_history_boundary_wait($gameCode, $pageNo, $pageSize, $data, $readData);
         return $data;
     } catch (Throwable $e) {
         $storageReady = false;
         sl_log_history_failure($gameCode, 'cache_read_or_settlement', $e);
         return $fallback;
     }
+}
+
+function sl_wingo_history_boundary_wait($gameCode, $pageNo, $pageSize, $data, $readData)
+{
+    // The game client fetches the history exactly once, straddling the
+    // period boundary. In the one-period-lag (shreewin) view the row for
+    // the period that ends at the boundary is already provider-published
+    // one full interval earlier, so if it is missing here we hold the
+    // request briefly while the local cache settles. This is the server
+    // half of the "result appears automatically when the timer ends"
+    // behavior.
+    if ($pageNo !== 1 || sl_game_family($gameCode) !== 'WinGo' || !is_array($data) || !isset($data['list'])) {
+        return $data;
+    }
+    $list = array_values((array) $data['list']);
+    $interval = sl_interval_seconds($gameCode);
+    $now = time();
+    $dayStart = strtotime(gmdate('Y-m-d', $now) . ' 00:00:00 UTC');
+    $slotStart = $dayStart + ((int) floor(($now - $dayStart) / $interval) * $interval);
+    // The on-site period flips exactly when the provider's current slot
+    // ends — one interval after its start.
+    $boundary = ($slotStart + $interval) * 1000;
+    $nowMs = sl_now_ms();
+    if ($nowMs < $boundary - 12000 || $nowMs > $boundary + 12000) {
+        return $data;
+    }
+    if ($nowMs < $boundary) {
+        // Still inside the on-site window: the period that is about to end
+        // is the site's current one; it lands in history at the flip.
+        $expected = sl_wingo_current_issue($gameCode);
+    } else {
+        // Just after the flip: the period that ended is one interval behind
+        // the provider's current slot start.
+        $expected = sl_issue_number_for_start($gameCode, $slotStart - 2 * $interval);
+    }
+    if ($expected === '' || ($list && strcmp((string) $list[0]['issueNumber'], $expected) >= 0)) {
+        return $data;
+    }
+    $deadline = sl_now_ms() + 8000;
+    while (sl_now_ms() < $deadline) {
+        usleep(1200000);
+        $payload = null;
+        try {
+            $payload = sl_provider_history($gameCode, 1, min(10, $pageSize));
+        } catch (Throwable $e) {
+            // Provider hiccup inside the wait window; retry on the next tick.
+        }
+        if ($payload && isset($payload['data']['list'])) {
+            sl_save_and_settle_results($gameCode, $payload['data']['list']);
+        }
+        $data = $readData();
+        $list = array_values((array) $data['list']);
+        if ($list && strcmp((string) $list[0]['issueNumber'], $expected) >= 0) {
+            break;
+        }
+    }
+    return $data;
 }
 
 function sl_record_page($userId, $input)
