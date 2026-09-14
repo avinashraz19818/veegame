@@ -32,7 +32,7 @@ const root=path.resolve(__dirname,'../..');
   const result=spawnSync('php',[],{input:php,encoding:'utf8'});assert.equal(result.status,0,result.stderr);
   const payload=JSON.parse(result.stdout);
   for(const [game,info] of Object.entries(payload.info)){
-    assert.deepEqual(info.betMultiples,[1,5,10,20,100],game);
+    assert.deepEqual(info.betMultiples,[1,5,10,20,50,100],game);
     assert.deepEqual(info.betScopes,[1,10,100,1000]);
   }
   const rule=fs.readFileSync(path.join(root,'assets/js/BetRule-BmuRxM2O.js'),'utf8');
@@ -45,5 +45,5 @@ const root=path.resolve(__dirname,'../..');
   assert(!notice.includes('WinGoBet'));assert(!notice.includes('--activate'));
   const output=process.env.VEE_UI_FIXTURE_JSON;
   if(output)fs.writeFileSync(output,JSON.stringify(payload));
-  console.log('PASS: silent login refresh updates balance; manual refresh unchanged; five presets on all four games; both rows use those presets; no floating banner or activation change.');
+  console.log('PASS: silent login refresh updates balance; manual refresh unchanged; six presets on all four games; both rows use those presets; no floating banner or activation change.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

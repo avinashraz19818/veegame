@@ -1,0 +1,16 @@
+{
+  "zip": "veegame-ui-v4.zip",
+  "bytes": 10733,
+  "sha256": "97be81c6cfc955bf662722be028cdeebfc32c9539d206b1f3abac0176784899d",
+  "entries": 3,
+  "payload": {
+    "saas_lottery/bootstrap_live_v4.php": {
+      "bytes": 40294,
+      "sha256": "1004aab0f6674f5a24bb1af4b25d0f225359c6c242053352c91a07f6a66ebff6"
+    },
+    "README-VEEGAME-UI4.txt": {
+      "bytes": 1131,
+      "sha256": "dce851a6b3e2d2cfd40ab01fd992b6937c28ec396e79075e30beeaaea1aef527"
+    }
+  }
+}
