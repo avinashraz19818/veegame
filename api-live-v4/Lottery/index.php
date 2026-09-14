@@ -178,7 +178,7 @@ try {
             sl_ok(array(
                 'userId'=>(int)$user['id'],'tenantId'=>1,'agentCode'=>'LOCAL',
                 'sysCurrency'=>'INR','state'=>1,'tenantAccount'=>(string)$user['id'],
-                'isOpenFollow'=>app_setting_bool('follow_strategy_enabled',true),'skin'=>'blackGoldStyle','skinColor'=>'#d7ad55'
+                'isOpenFollow'=>false,'skin'=>'blackGoldStyle','skinColor'=>'#d7ad55'
             ));
             break;
         case 'GetBalance':
