@@ -2057,16 +2057,27 @@ function sl_record_page($userId, $input)
         // `premium`. Return both the current and legacy aliases so every game
         // record view can render the same settled row.
         $recordNumber = ($premium !== '' && ($isWingo || $recordFamily === 'K3')) ? $premium : '';
+        // The WinGo family runs one period behind the result feed
+        // (shreewin parity). Shift the displayed bet time back by one
+        // minute so the history list stays consistent with the on-site
+        // period timeline the player actually sees.
+        $displayTime = (string) $row['created_at'];
+        if ($recordFamily === 'WinGo') {
+            $ts = strtotime($displayTime);
+            if ($ts !== false) {
+                $displayTime = date('Y-m-d H:i:s', $ts - 60);
+            }
+        }
         $list[] = array(
             'orderNo'=>(string)$row['id'],'issueNumber'=>(string)$row['issue_number'],'gameCode'=>(string)$row['game_code'],
             'betContent'=>(string)$row['bet_content'],'playType'=>$playType,'selectType'=>$selectType,
             'amount'=>$stake,'unitAmount'=>(float)$row['amount'],'betMultiple'=>(int)$row['bet_multiple'],'betCount'=>(int)$row['bet_multiple'],
             'betUnits'=>(int)$row['bet_units'],'realAmount'=>max(0.0, round($stake-$taxFee,4)),'fee'=>$taxFee,'serviceCharge'=>$taxFee,'tax'=>$taxFee,'taxAmount'=>$taxFee,'taxRate'=>sl_tax_percent(),'state'=>$state,'premium'=>$premium,
-            'winLoseAmount'=>$winLose,'betTime'=>(string)$row['created_at'],'orderNumber'=>(string)$row['id'],
+            'winLoseAmount'=>$winLose,'betTime'=>$displayTime,'orderNumber'=>(string)$row['id'],
             'betAmount'=>$stake,'number'=>$recordNumber,'resultNumber'=>$isWingo && $premium !== '' ? (int)$premium : null,
             'color'=>$isWingo && $premium !== '' ? sl_result_color((int)$premium) : '',
             'winAmount'=>$payout,'profitAmount'=>$state === 2 ? 0.0 : abs($winLose),
-            'createTime'=>(string)$row['created_at'],'addTime'=>(string)$row['created_at']
+            'createTime'=>$displayTime,'addTime'=>$displayTime
         );
     }
     $stmt->close();
