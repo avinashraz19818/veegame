@@ -2098,7 +2098,25 @@ function sl_win_loss($userId, $input)
         $find->close();
     }
     if ($gameCode !== '') {
-        sl_sync_results($gameCode);
+        // Fast path: only hit the provider when this bet is still pending.
+        // By the time the client asks, the boundary history fetch has
+        // normally already synced and settled the issue, so skip the extra
+        // provider round-trip and answer immediately.
+        $readStatus = function () use ($conn, $userId, $issue) {
+            $stmt = $conn->prepare("SELECT COUNT(*),SUM(status='pending'),SUM(status='won'),COALESCE(SUM(payout),0) FROM saas_lottery_bets WHERE user_id=? AND issue_number=?");
+            $stmt->bind_param('is', $userId, $issue);
+            $stmt->execute();
+            $total = $pending = $won = $winAmount = 0;
+            $stmt->bind_result($total, $pending, $won, $winAmount);
+            $stmt->fetch();
+            $stmt->close();
+            return array($total, $pending, $won, $winAmount);
+        };
+        list($total, $pending, $won, $winAmount) = $readStatus();
+        if ((int) $total > 0 && (int) $pending > 0) {
+            sl_sync_results($gameCode);
+            list($total, $pending, $won, $winAmount) = $readStatus();
+        }
     }
     $stmt = $conn->prepare("SELECT COUNT(*),SUM(status='pending'),SUM(status='won'),COALESCE(SUM(payout),0) FROM saas_lottery_bets WHERE user_id=? AND issue_number=?");
     $stmt->bind_param('is', $userId, $issue);
