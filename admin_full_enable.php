@@ -82,6 +82,15 @@ if ($donorDb === '') {
 out('Donor database   : ' . $donorDb);
 out('');
 
+/* ---------- DB credentials (read from the connection file itself) ---------- */
+$dbUser = ''; $dbPass = '';
+$rawConn = (string)@file_get_contents($siteRoot);
+if (preg_match("/mysqli_connect\s*\(\s*['\"]?localhost['\"]?\s*,\s*['\"]([^'\"]+)['\"]\s*,\s*['\"]([^'\"]*)['\"]/", $rawConn, $mCred)) {
+    $dbUser = $mCred[1]; $dbPass = $mCred[2];
+}
+out('DB user          : ' . ($dbUser !== '' ? $dbUser : '(could not detect from connection file)'));
+out('');
+
 /* =========================================================
  * PHASE 1 - enable all admin permissions
  * ========================================================= */
@@ -96,12 +105,23 @@ if ($desc) {
 if (!$realCols) {
     out('ERROR: table nirvahaka_shonu not found in ' . $currentDb . ' - create/restore it first.');
 } else {
-    $permCols = array_values(array_intersect($permissionKeys, $realCols));
-    out('Permission columns present in nirvahaka_shonu: ' . count($permCols) . ' / ' . count($permissionKeys));
-    $missingCols = array_diff($permissionKeys, $realCols);
+    // First make sure ALL permission columns exist. The menu code defaults
+    // any missing column to 0 (hidden), so columns that do not exist must
+    // be ADDED or those menu sections can never appear.
+    $missingCols = array_values(array_diff($permissionKeys, $realCols));
     if ($missingCols) {
-        out('NOTE: columns not present (skipped): ' . implode(', ', $missingCols));
+        out('Adding ' . count($missingCols) . ' missing permission column(s): ' . implode(', ', $missingCols));
+        foreach ($missingCols as $mc) {
+            $mc2 = preg_replace('/[^a-z0-9_]/i', '', $mc);
+            $okAlt = $conn->query("ALTER TABLE nirvahaka_shonu ADD COLUMN `" . $mc2 . "` TINYINT(1) NOT NULL DEFAULT 1");
+            out($okAlt ? '   OK added `' . $mc2 . '`' : '   ALTER failed for ' . $mc2 . ': ' . $conn->error);
+        }
+        $desc = $conn->query('DESCRIBE nirvahaka_shonu');
+        $realCols = array();
+        if ($desc) { while ($r = $desc->fetch_assoc()) { $realCols[] = $r['Field']; } }
     }
+    $permCols = array_values(array_intersect($permissionKeys, $realCols));
+    out('Permission columns now present in nirvahaka_shonu: ' . count($permCols) . ' / ' . count($permissionKeys));
     $adminRows = $conn->query('SELECT unohs, nirvahaka_hesaru FROM nirvahaka_shonu');
     $n = 0;
     if ($permCols) {
@@ -130,7 +150,7 @@ out('');
 out('--- PHASE 2: MISSING TABLES CHECK ----------------------');
 $donorOk = false;
 try {
-    $t = @new mysqli($conn->host, $conn->username, $conn->password, $donorDb);
+    $t = @new mysqli($conn->host, $dbUser, $dbPass, $donorDb);
     if ($t->connect_errno) {
         throw new RuntimeException($t->connect_error);
     }
@@ -146,7 +166,7 @@ if (!$donorOk) {
     out('To let this script see/copy the donor tables, do ONE of these:');
     out('  A) cPanel -> MySQL Databases -> "Add User To Database":');
     out('       database = ' . $donorDb);
-    out('       user     = ' . $conn->username);
+    out('       user     = ' . $dbUser);
     out('       click ALL PRIVILEGES.');
     out('     Then re-run this URL with &copy=1');
     out('  B) Or in phpMyAdmin: open ' . $donorDb . ' -> export the missing tables,');
@@ -177,7 +197,7 @@ if (!$donorOk) {
         out('');
         if ($mode === 'copy') {
             out('--- PHASE 3: COPYING MISSING TABLES ----------');
-            $donor = new mysqli($conn->host, $conn->username, $conn->password, $donorDb);
+            $donor = new mysqli($conn->host, $dbUser, $dbPass, $donorDb);
             $copied = 0; $errors = 0;
             foreach ($missing as $m) {
                 $mt = preg_replace('/[^a-z0-9_]/i', '', $m);
