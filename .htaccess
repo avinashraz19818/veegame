@@ -21,3 +21,11 @@ DirectoryIndex index.php index.html
 <FilesMatch "\.(?:sql|log|txt|bak|env|ini|zip)$">
   Require all denied
 </FilesMatch>
+
+# Force browser revalidation for the compiled SPA bundle so new deploys
+# reach users' phones automatically (no stale cached JS after updates).
+<IfModule mod_headers.c>
+  <FilesMatch "\.(?:js|css|html)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
