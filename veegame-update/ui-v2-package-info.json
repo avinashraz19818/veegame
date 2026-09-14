@@ -1,0 +1,24 @@
+{
+  "zip": "veegame-ui-v2.zip",
+  "bytes": 21927,
+  "sha256": "649358485164355927d3d2e6595b95b07257659d2d0eb21054bc795d285df349",
+  "entries": 5,
+  "payload": {
+    "assets/js/publicCHome-BXq3dfgY.js": {
+      "bytes": 28258,
+      "sha256": "8efc9e9c401367b8c5efcfdf3daccb83634c87a84b1b86236acf7d5e988f73b5"
+    },
+    "assets/js/veegame-migration-notice.js": {
+      "bytes": 1129,
+      "sha256": "066f3c44646181e493507eb3472588821dbebfcc20d082f8fea2f75b1aeef203"
+    },
+    "saas_lottery/bootstrap_live_v4.php": {
+      "bytes": 40291,
+      "sha256": "a863b264f3da8a9b3e0fc7118663d70cedea3e271b6f7638441c45502e1d8522"
+    },
+    "README-VEEGAME-UI2.txt": {
+      "bytes": 2299,
+      "sha256": "d53cd7781d699afc271dc9123604ad123e8750791985613899ee1c2fb1e7b5be"
+    }
+  }
+}
