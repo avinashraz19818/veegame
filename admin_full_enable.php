@@ -145,6 +145,35 @@ if (!$realCols) {
 out('');
 
 /* =========================================================
+ * PHASE 1b - guaranteed critical tables (safe IF NOT EXISTS)
+ * These tables are hard-referenced by admin pages and break the
+ * page (mid-render PHP fatal -> DataTables "Incorrect column
+ * count") when absent. Only created if missing; never modified.
+ * ========================================================= */
+out('--- PHASE 1b: CRITICAL TABLES GUARANTEE ---------------');
+$guaranteed = array(
+    'demo' => "CREATE TABLE IF NOT EXISTS demo (
+        balakedara BIGINT UNSIGNED NOT NULL,
+        motta VARCHAR(50) NOT NULL DEFAULT '',
+        dinankavannuracisi DATETIME NULL DEFAULT NULL,
+        shonu VARCHAR(10) NOT NULL DEFAULT '',
+        sthiti TINYINT(1) NOT NULL DEFAULT 1,
+        PRIMARY KEY (balakedara)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+);
+foreach ($guaranteed as $tname => $tsql) {
+    $exists = $conn->query("SHOW TABLES LIKE '" . preg_replace('/[^a-z0-9_]/i', '', $tname) . "'");
+    if ($exists && $exists->num_rows > 0) {
+        out('`' . $tname . '` already exists - left untouched.');
+    } elseif ($conn->query($tsql)) {
+        out('`' . $tname . '` created (structure only, no data).');
+    } else {
+        out('FAILED to create `' . $tname . '`: ' . $conn->error);
+    }
+}
+out('');
+
+/* =========================================================
  * PHASE 2 - missing tables vs donor database
  * ========================================================= */
 out('--- PHASE 2: MISSING TABLES CHECK ----------------------');
