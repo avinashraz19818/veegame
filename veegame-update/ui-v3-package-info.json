@@ -1,0 +1,16 @@
+{
+  "zip": "veegame-ui-v3.zip",
+  "bytes": 414320,
+  "sha256": "7656da9d9fb2c30ab11929fe05758e3d58d954ea4810d5b73f2a97f2a6fed20c",
+  "entries": 3,
+  "payload": {
+    "assets/js/index-CBcbycSk.js": {
+      "bytes": 1213866,
+      "sha256": "a4a3e14d5aef87944728da6deee8000ab8ecb12af6d86c8c024beb027996f15a"
+    },
+    "README-VEEGAME-UI3.txt": {
+      "bytes": 2369,
+      "sha256": "20434293fa61ea6b21e56d7f2e93da49a8aa28aed9558e736f834c4cf35c36aa"
+    }
+  }
+}

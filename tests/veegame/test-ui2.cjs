@@ -16,7 +16,7 @@ const root=path.resolve(__dirname,'../..');
   const wallet=vm.runInNewContext('({'+main.slice(start,end)+'})',{
     Pe:async req=>{requests.push(req);return {data:{amount:731.25}};},
     Que:()=> 'normal-wallet-refresh',Zue:()=> 'alternate-wallet-refresh',
-    kr:text=>toasts.push(text),Qg:key=>key
+    kr:text=>toasts.push(text),Qg:key=>key,Ye:{currentRoute:{value:{path:'/wallet'}}}
   });
   // Actual homepage startup arguments: silent=true, alternateWallet=false.
   await wallet.resetData(true,false);
